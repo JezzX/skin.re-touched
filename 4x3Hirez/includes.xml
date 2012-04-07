@@ -22,6 +22,56 @@
 			<texture fallback="special://skin/background/background.jpg">special://skin/backgrounds/$INFO[Skin.CurrentTheme].jpg</texture>
 		</control>
 		<include>CommonHeader</include>
+		<control type="grouplist" id="9010">
+			<visible>Window.IsVisible(Home)</visible>
+			<posx>0</posx>
+			<posy>100</posy>
+			<width>1280</width>
+			<height>50</height>
+			<align>center</align>
+			<onup>9000</onup>
+			<ondown>9002</ondown>
+			<itemgap>0</itemgap>
+			<orientation>Horizontal</orientation>
+			<animation effect="slide" start="0,-50" end="0,0" delay="200" time="200" tween="quadratic" easing="out">WindowOpen</animation>
+			<animation effect="slide" start="0,0" end="0,-50" time="200" tween="quadratic" easing="out">WindowClose</animation>
+			<onleft>9010</onleft>
+			<onright>9010</onright>
+			<control type="image">
+				<width>50</width>
+				<height>50</height>
+				<texture border="0,0,0,3" flipx="true">HomeSubEnd.png</texture>
+			</control>
+			<control type="button">
+				<include>ButtonHomeSubCommonValues</include>
+				<label>31013</label>
+				<onclick>ActivateWindow(Videos,RecentlyAddedMovies,return)</onclick>
+				<visible>Library.HasContent(Movies)</visible>
+			</control>
+			<control type="button">
+				<include>ButtonHomeSubCommonValues</include>
+				<label>31014</label>
+				<onclick>ActivateWindow(Videos,RecentlyAddedEpisodes,return)</onclick>
+				<visible>Library.HasContent(TVShows)</visible>
+			</control>
+			<control type="button">
+				<include>ButtonHomeSubCommonValues</include>
+				<label>31015</label>
+				<onclick>ActivateWindow(Videos,RecentlyAddedMusicVideos,return)</onclick>
+				<visible>Library.HasContent(MusicVideos)</visible>
+			</control>
+			<control type="button">
+				<include>ButtonHomeSubCommonValues</include>
+				<label>31016</label>
+				<onclick>ActivateWindow(MusicLibrary,RecentlyAddedAlbums,return)</onclick>
+				<visible>Library.HasContent(Music)</visible>
+			</control>
+			<control type="image">
+				<width>50</width>
+				<height>50</height>
+				<texture border="0,0,0,3">HomeSubEnd.png</texture>
+			</control>
+		</control>
 		<control type="group">
 			<visible>!Window.IsActive(PlayerControls)</visible>
 			<include>VisibleFadeEffect</include>
@@ -440,6 +490,19 @@
 				<label>$INFO[ListItem.Label]</label>
 			</control>
 		</focusedlayout>
+	</include>
+	<include name="ButtonHomeSubCommonValues">
+		<height>50</height>
+		<width>220</width>
+		<textwidth>195</textwidth>
+		<align>center</align>
+		<aligny>center</aligny>
+		<font>font12</font>
+		<textcolor>grey2</textcolor>
+		<focusedcolor>white</focusedcolor>
+		<texturefocus border="5">HomeSubFO.png</texturefocus>
+		<texturenofocus border="5">HomeSubNF.png</texturenofocus>
+		<pulseonselect>false</pulseonselect>
 	</include>
 	<include name="ButtonCommonValues2">
 		<height>60</height>

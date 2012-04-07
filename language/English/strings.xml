@@ -14,6 +14,10 @@
   <string id="31010">Currently logged in as</string>
   <string id="31011">N/A</string> <!-- Used for subtitle button in the OSD -->
   <string id="31012">Music - Files</string>
+  <string id="31013">Recent Movies</string>
+  <string id="31014">Recent Episodes</string>
+  <string id="31015">Recent Music Videos</string>
+  <string id="31016">Recent Albums</string>
 
   <string id="31024">Page</string>
   <string id="31025">Items</string>

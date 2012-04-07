@@ -98,7 +98,7 @@
 			<include>Window_OpenClose_Animation_Zoom</include>
 			<control type="group">
 				<posx>0</posx>
-				<posy>130</posy>
+				<posy>150</posy>
 				<control type="button">
 					<description>left Arrow</description>
 					<posx>30</posx>
