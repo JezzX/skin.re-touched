@@ -19,7 +19,7 @@
 			<aspectratio>scale</aspectratio>
 			<width>ScreenWidth</width>
 			<height>ScreenHeight</height>
-			<texture>special://skin/background/background.png</texture>
+			<texture fallback="special://skin/background/background.jpg">special://skin/backgrounds/$INFO[Skin.CurrentTheme].jpg</texture>
 		</control>
 		<include>CommonHeader</include>
 		<control type="group">

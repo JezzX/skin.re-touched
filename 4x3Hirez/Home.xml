@@ -217,14 +217,14 @@
 							<label>3</label>
 							<onclick condition="!Skin.HasSetting(HomeVideosGoesToRoot)">ActivateWindow(Videos)</onclick>
 							<onclick condition="Skin.HasSetting(HomeVideosGoesToRoot)">ActivateWindow(Videos,root)</onclick>
-							<icon>videos.png</icon>
+							<icon>videos.jpg</icon>
 							<thumb>-</thumb>
 							<visible>!Skin.HasSetting(HideHomeButtonVideo)</visible>
 						</item>
 						<item>
 							<label>20342</label>
 							<onclick>ActivateWindow(Videos,MovieTitles,Return)</onclick>
-							<icon>movies.png</icon>
+							<icon>movies.jpg</icon>
 							<thumb>-</thumb>
 							<visible>Library.HasContent(Movies)</visible>
 							<visible>!Skin.HasSetting(HideHomeButtonMovies)</visible>
@@ -232,7 +232,7 @@
 						<item>
 							<label>20343</label>
 							<onclick>ActivateWindow(Videos,TVShowTitles,Return)</onclick>
-							<icon>tvshows.png</icon>
+							<icon>tvshows.jpg</icon>
 							<thumb>-</thumb>
 							<visible>Library.HasContent(TVShows)</visible>
 							<visible>!Skin.HasSetting(HideHomeButtonTVShows)</visible>
@@ -240,21 +240,21 @@
 						<item>
 							<label>2</label>
 							<onclick>ActivateWindow(Music)</onclick>
-							<icon>music.png</icon>
+							<icon>music.jpg</icon>
 							<thumb>-</thumb>
 							<visible>!Skin.HasSetting(HideHomeButtonMusic)</visible>
 						</item>
 						<item>
 							<label>1</label>
 							<onclick>ActivateWindow(Pictures)</onclick>
-							<icon>pictures.png</icon>
+							<icon>pictures.jpg</icon>
 							<thumb>-</thumb>
 							<visible>!Skin.HasSetting(HideHomeButtonPictures)</visible>
 						</item>
 						<item>
 							<label>0</label>
 							<onclick>ActivateWindow(Programs,Addons,return)</onclick>
-							<icon>programs.png</icon>
+							<icon>programs.jpg</icon>
 							<thumb>-</thumb>
 							<visible>!Skin.HasSetting(HideHomeButtonPrograms)</visible>
 						</item>
