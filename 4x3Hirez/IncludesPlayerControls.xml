@@ -21,7 +21,7 @@
 				<posy>0</posy>
 				<width>ScreenWidth</width>
 				<height>200</height>
-				<texture border="5">dialogback.png</texture>
+				<texture border="5">DialogBack.png</texture>
 			</control>
 			<control type="group">
 				<control type="image">
@@ -161,7 +161,7 @@
 				<posy>0</posy>
 				<width>ScreenWidth</width>
 				<height>200</height>
-				<texture border="5">dialogback.png</texture>
+				<texture border="5">DialogBack.png</texture>
 			</control>
 			<control type="group">
 				<control type="group">

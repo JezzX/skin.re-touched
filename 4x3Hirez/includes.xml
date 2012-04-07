@@ -39,49 +39,53 @@
 				<height>80</height>
 				<texture border="0,0,0,2">header.png</texture>
 			</control>
-			<control type="button">
-				<description>Previous Button</description>
-				<posx>550</posx>
-				<posy>30</posy>
-				<width>45</width>
-				<height>45</height>
-				<label>-</label>
-				<texturenofocus>PlayerControls2-PreviousNF.png</texturenofocus>
-				<texturefocus>PlayerControls2-PreviousFO.png</texturefocus>
-				<onclick>XBMC.PlayerControl(Previous)</onclick>
-			</control>
-			<control type="togglebutton">
-				<description>Play Button</description>
-				<posx>612</posx>
-				<posy>23</posy>
-				<width>56</width>
-				<height>56</height>
-				<label>-</label>
-				<texturefocus>PlayerControls2-PlayFO.png</texturefocus>
-				<texturenofocus>PlayerControls2-PlayNF.png</texturenofocus>
-				<usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
-				<alttexturefocus>PlayerControls2-PauseFO.png</alttexturefocus>
-				<alttexturenofocus>PlayerControls2-PauseNF.png</alttexturenofocus>
-				<onclick>XBMC.PlayerControl(Play)</onclick>
-			</control>
-			<control type="button">
-				<description>Next Button</description>
-				<posx>680</posx>
-				<posy>30</posy>
-				<width>45</width>
-				<height>45</height>
-				<label>-</label>
-				<texturenofocus>PlayerControls2-NextNF.png</texturenofocus>
-				<texturefocus>PlayerControls2-NextFO.png</texturefocus>
-				<onclick>XBMC.PlayerControl(Next)</onclick>
-			</control>
-			<control type="progress">
-				<description>Progressbar</description>
-				<posx>450</posx>
-				<posy>83</posy>
-				<width>380</width>
-				<height>15</height>
-				<info>Player.Progress</info>
+			<control type="group">
+				<posx>545</posx>
+				<posy>20</posy>
+				<control type="button">
+					<description>Previous Button</description>
+					<posx>0</posx>
+					<posy>5</posy>
+					<width>55</width>
+					<height>55</height>
+					<label>-</label>
+					<texturenofocus>PlayerControls2-PreviousNF.png</texturenofocus>
+					<texturefocus>PlayerControls2-PreviousFO.png</texturefocus>
+					<onclick>XBMC.PlayerControl(Previous)</onclick>
+				</control>
+				<control type="togglebutton">
+					<description>Play Button</description>
+					<posx>60</posx>
+					<posy>0</posy>
+					<width>65</width>
+					<height>65</height>
+					<label>-</label>
+					<texturefocus>PlayerControls2-PlayFO.png</texturefocus>
+					<texturenofocus>PlayerControls2-PlayNF.png</texturenofocus>
+					<usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
+					<alttexturefocus>PlayerControls2-PauseFO.png</alttexturefocus>
+					<alttexturenofocus>PlayerControls2-PauseNF.png</alttexturenofocus>
+					<onclick>XBMC.PlayerControl(Play)</onclick>
+				</control>
+				<control type="button">
+					<description>Next Button</description>
+					<posx>130</posx>
+					<posy>5</posy>
+					<width>55</width>
+					<height>55</height>
+					<label>-</label>
+					<texturenofocus>PlayerControls2-NextNF.png</texturenofocus>
+					<texturefocus>PlayerControls2-NextFO.png</texturefocus>
+					<onclick>XBMC.PlayerControl(Next)</onclick>
+				</control>
+				<control type="progress">
+					<description>Progressbar</description>
+					<posx>-95</posx>
+					<posy>65</posy>
+					<width>380</width>
+					<height>12</height>
+					<info>Player.Progress</info>
+				</control>
 			</control>
 			<control type="image">
 				<posx>0</posx>
