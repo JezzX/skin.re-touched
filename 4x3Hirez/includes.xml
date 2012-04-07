@@ -282,7 +282,7 @@
 			<posy>35</posy>
 			<include>Window_OpenClose_Animation</include>
 			<control type="image">
-				<posx>120r</posx>
+				<posx>130r</posx>
 				<posy>0</posy>
 				<width>45</width>
 				<height>45</height>
@@ -291,7 +291,7 @@
 			</control>
 			<control type="label">
 				<description>Page Count Label 1</description>
-				<posx>130r</posx>
+				<posx>140r</posx>
 				<posy>2</posy>
 				<width>500</width>
 				<height>20</height>
@@ -304,7 +304,7 @@
 			</control>
 			<control type="label">
 				<description>Page Count Label 2</description>
-				<posx>130r</posx>
+				<posx>140r</posx>
 				<posy>22</posy>
 				<width>500</width>
 				<height>20</height>
@@ -340,27 +340,57 @@
 		</control>
 	</include>
 	<include name="HomeButtonCommons">
-		<control type="button">
-			<description>Home Button</description>
-			<posx>0</posx>
+		<control type="group">
+			<posx>5</posx>
 			<posy>25</posy>
-			<width>64</width>
-			<height>64</height>
-			<texturenofocus>icon_home.png</texturenofocus>
-			<texturefocus>icon_home.png</texturefocus>
-			<onclick>ActivateWindow(Home)</onclick>
+			<visible>!Window.IsActive(PlayerControls)</visible>
+			<include>VisibleFadeEffect</include>
+			<control type="button">
+				<description>Home Button</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>67</width>
+				<height>67</height>
+				<font>-</font>
+				<texturenofocus border="5">floor_button.png</texturenofocus>
+				<texturefocus border="5">floor_buttonFO.png</texturefocus>
+				<onclick>ActivateWindow(Home)</onclick>
+			</control>
+			<control type="image">
+				<description>Home Button Image</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>67</width>
+				<height>67</height>
+				<texture>icon_home.png</texture>
+			</control>
 		</control>
 	</include>
 	<include name="OptionsButtonCommons">
-		<control type="button">
-			<description>Options Button</description>
-			<posx>64r</posx>
+		<control type="group">
+			<posx>72r</posx>
 			<posy>25</posy>
-			<width>64</width>
-			<height>64</height>
-			<texturenofocus>icon_system.png</texturenofocus>
-			<texturefocus>icon_system.png</texturefocus>
-			<onclick>Skin.ToggleSetting(MediaSubMenuVisible)</onclick>
+			<visible>!Window.IsActive(PlayerControls)</visible>
+			<include>VisibleFadeEffect</include>
+			<control type="button">
+				<description>Options Button</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>67</width>
+				<height>67</height>
+				<font>-</font>
+				<texturenofocus border="5">floor_button.png</texturenofocus>
+				<texturefocus border="5">floor_buttonFO.png</texturefocus>
+				<onclick>Skin.ToggleSetting(MediaSubMenuVisible)</onclick>
+			</control>
+			<control type="image">
+				<description>Options Button Image</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>67</width>
+				<height>67</height>
+				<texture>icon_system.png</texture>
+			</control>
 		</control>
 	</include>
 	<include name="DialogCloseButtonCommons">
