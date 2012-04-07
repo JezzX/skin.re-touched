@@ -5,21 +5,35 @@
 		<include>CommonBackground</include>
 		<include>HomeButtonCommons</include>
 		<include>CommonNowPlaying</include>
-		<include>OptionsButtonCommons</include>
 		<control type="label">
 			<description>Window label</description>
 			<include>MediaWindowTitleCommons</include>
 			<label>$LOCALIZE[8]</label>
 		</control>
-		<control type="button">
-			<description>Options Button</description>
-			<posx>64r</posx>
+		<control type="group">
+			<posx>72r</posx>
 			<posy>25</posy>
-			<width>64</width>
-			<height>64</height>
-			<texturenofocus>icon_system.png</texturenofocus>
-			<texturefocus>icon_system.png</texturefocus>
-			<onclick>ActivateWindow(MyWeatherSettings)</onclick>
+			<visible>!Window.IsActive(PlayerControls)</visible>
+			<include>VisibleFadeEffect</include>
+			<control type="button">
+				<description>Options Button</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>67</width>
+				<height>67</height>
+				<font>-</font>
+				<texturenofocus border="5">floor_button.png</texturenofocus>
+				<texturefocus border="5">floor_buttonFO.png</texturefocus>
+				<onclick>ActivateWindow(MyWeatherSettings)</onclick>
+			</control>
+			<control type="image">
+				<description>Options Button Image</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>67</width>
+				<height>67</height>
+				<texture>icon_system.png</texture>
+			</control>
 		</control>
 		<control type="group">
 			<include>Window_OpenClose_Animation_Zoom</include>
