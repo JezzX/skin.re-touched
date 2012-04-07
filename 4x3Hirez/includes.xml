@@ -23,7 +23,8 @@
 		</control>
 		<include>CommonHeader</include>
 		<control type="grouplist" id="9010">
-			<visible>Window.IsVisible(Home)</visible>
+			<visible>!Window.IsActive(PlayerControls) + Window.IsVisible(Home) + [Library.HasContent(Movies) | Library.HasContent(TVShows) | Library.HasContent(MusicVideos) | Library.HasContent(Music)]</visible>
+			<include>VisibleFadeEffect</include>
 			<posx>0</posx>
 			<posy>100</posy>
 			<width>1280</width>
