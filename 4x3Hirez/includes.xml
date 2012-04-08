@@ -92,7 +92,7 @@
 			</control>
 			<control type="group">
 				<posx>545</posx>
-				<posy>20</posy>
+				<posy>23</posy>
 				<control type="button">
 					<description>Previous Button</description>
 					<posx>0</posx>
@@ -100,8 +100,8 @@
 					<width>55</width>
 					<height>55</height>
 					<label>-</label>
-					<texturenofocus>PlayerControls2-PreviousNF.png</texturenofocus>
-					<texturefocus>PlayerControls2-PreviousFO.png</texturefocus>
+					<texturenofocus>OSDPrevTrackNF.png</texturenofocus>
+					<texturefocus>OSDPrevTrackFO.png</texturefocus>
 					<onclick>XBMC.PlayerControl(Previous)</onclick>
 				</control>
 				<control type="togglebutton">
@@ -111,11 +111,11 @@
 					<width>65</width>
 					<height>65</height>
 					<label>-</label>
-					<texturefocus>PlayerControls2-PlayFO.png</texturefocus>
-					<texturenofocus>PlayerControls2-PlayNF.png</texturenofocus>
+					<texturefocus>OSDPlayFO.png</texturefocus>
+					<texturenofocus>OSDPlayNF.png</texturenofocus>
 					<usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
-					<alttexturefocus>PlayerControls2-PauseFO.png</alttexturefocus>
-					<alttexturenofocus>PlayerControls2-PauseNF.png</alttexturenofocus>
+					<alttexturefocus>OSDPauseFO.png</alttexturefocus>
+					<alttexturenofocus>OSDPauseNF.png</alttexturenofocus>
 					<onclick>XBMC.PlayerControl(Play)</onclick>
 				</control>
 				<control type="button">
@@ -125,17 +125,19 @@
 					<width>55</width>
 					<height>55</height>
 					<label>-</label>
-					<texturenofocus>PlayerControls2-NextNF.png</texturenofocus>
-					<texturefocus>PlayerControls2-NextFO.png</texturefocus>
+					<texturenofocus>OSDNextTrackNF.png</texturenofocus>
+					<texturefocus>OSDNextTrackFO.png</texturefocus>
 					<onclick>XBMC.PlayerControl(Next)</onclick>
 				</control>
 				<control type="progress">
 					<description>Progressbar</description>
 					<posx>-95</posx>
-					<posy>65</posy>
+					<posy>70</posy>
 					<width>380</width>
-					<height>12</height>
+					<height>6</height>
 					<info>Player.Progress</info>
+					<texturebg border="10,0,10,0">HeaderProgressBack.png</texturebg>
+					<midtexture border="10,0,10,0">HeaderProgressFront.png</midtexture>
 				</control>
 			</control>
 			<control type="image">
