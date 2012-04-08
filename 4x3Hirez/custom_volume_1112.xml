@@ -3,7 +3,7 @@
 	<include>Window_OpenClose_Animation</include>
 	<controls>
 		<control type="button">
-			<description>Hidden button to close the sort when its focused</description>
+			<description>Hidden button to close the window when its focused</description>
 			<posx>0</posx>
 			<posy>0</posy>
 			<width>ScreenWidth</width>
@@ -13,53 +13,68 @@
 			<onclick>PreviousMenu</onclick>
 		</control>
 		<control type="group">
-			<posx>205</posx>
-			<posy>235r</posy>
+			<posx>68</posx>
+			<posy>205r</posy>
+			<animation effect="slide" start="0,0" end="112,0" time="0" condition="System.HasLoginScreen | IntegerGreaterThan(System.ProfileCount,1)">Conditional</animation>
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
 				<width>450</width>
-				<height>80</height>
-				<texture border="5">SubBack.png</texture>
+				<height>70</height>
+				<texture border="5">PlayerControls-Background.png</texture>
 			</control>
 			<control type="image">
 				<description>Panel Arrow image</description>
-				<posx>100</posx>
-				<posy>74</posy>
-				<width>40</width>
+				<posx>200</posx>
+				<posy>65</posy>
+				<width>50</width>
 				<height>40</height>
 				<texture>arrow-big-down.png</texture>
 			</control>
-			<control type="progress">
-				<description>Volume</description>
+			<control type="label">
+				<description>label</description>
 				<posx>20</posx>
-				<posy>30</posy>
-				<width>300</width>
+				<posy>10</posy>
 				<height>20</height>
+				<width>200</width>
+				<label>13376</label>
+				<font>font12_title</font>
+				<aligny>center</aligny>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+			</control>
+			<control type="label">
+				<description>Volumelabel</description>
+				<posx>430</posx>
+				<posy>10</posy>
+				<height>20</height>
+				<width>200</width>
+				<label>$INFO[Control.GetLabel(1)]</label>
+				<font>font12_title</font>
+				<align>right</align>
+				<aligny>center</aligny>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+			</control>
+			<control type="progress" id="2">
+				<description>Volume</description>
+				<posx>15</posx>
+				<posy>35</posy>
+				<width>420</width>
+				<height>25</height>
 				<info>Player.Volume</info>
 			</control>
 			<control type="slider" id="1">
 				<description>Volume Slider</description>
-				<posx>20</posx>
-				<posy>30</posy>
-				<width>300</width>
-				<height>15</height>
+				<posx>15</posx>
+				<posy>35</posy>
+				<width>420</width>
+				<height>25</height>
  				<info>Player.Volume</info>
 				<action>Volume</action>
-				<texturesliderbar>seekslider.png</texturesliderbar>
-				<textureslidernib>osd_slider_nibNF.png</textureslidernib>
-				<textureslidernibfocus>osd_slider_nib.png</textureslidernibfocus>
-			</control>
-			<control type="label">
-				<description>Volume Label</description>
-				<posx>330</posx>
-				<posy>30</posy>
-				<width>100</width>
-				<height>20</height>
-				<label>$INFO[Player.Volume]</label>
-				<font>font13</font>
-				<align>left</align>
-				<aligny>center</aligny>
+				<texturesliderbar>OSDProgressBack2.png</texturesliderbar>
+				<textureslidernib>OSDSliderNib.png</textureslidernib>
+				<textureslidernibfocus>OSDSliderNib.png</textureslidernibfocus>
 			</control>
 		</control>
 	</controls>

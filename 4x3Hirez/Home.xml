@@ -289,7 +289,7 @@
 					<label>13376</label>
 					<onclick>ActivateWindow(1112)</onclick>
 					<icon>icon_volume.png</icon>
-					<visible>false</visible>
+					<visible>!System.Platform.IOS</visible>
 				</item>
 				<item>
 					<label>Reload Skin</label>

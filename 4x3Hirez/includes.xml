@@ -224,6 +224,22 @@
 			<font>font10_title</font>
 			<textcolor>white</textcolor>
 			<label>$INFO[System.Time]</label>
+			<visible>!Window.IsVisible(MuteBug)</visible>
+			<include>VisibleFadeEffect</include>
+		</control>
+		<control type="label">
+			<description>Muted label</description>
+			<posx>200</posx>
+			<posy>0</posy>
+			<width>880</width>
+			<height>18</height>
+			<align>center</align>
+			<aligny>center</aligny>
+			<font>font10_title</font>
+			<textcolor>orange</textcolor>
+			<label>$LOCALIZE[31017]</label>
+			<visible>Window.IsVisible(MuteBug)</visible>
+			<include>VisibleFadeEffect</include>
 		</control>
 		<control type="progress">
 			<description>Battery Percent</description>

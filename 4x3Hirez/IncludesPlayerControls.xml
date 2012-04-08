@@ -473,7 +473,7 @@
 			<description>Top Left bar</description>
 			<posx>0</posx>
 			<posy>20</posy>
-			<width>200</width>
+			<width>70</width>
 			<height>64</height>
 			<align>left</align>
 			<itemgap>5</itemgap>
@@ -499,6 +499,63 @@
 				<visible>Player.HasVideo</visible>
 			</control>
 			<control type="image">
+				<width>2</width>
+				<height>62</height>
+				<texture>header-divide.png</texture>
+			</control>
+		</control>
+		<control type="group">
+			<visible>!System.Platform.IOS</visible>
+			<posx>80</posx>
+			<posy>28</posy>
+			<control type="label">
+				<description>label</description>
+				<posx>5</posx>
+				<posy>0</posy>
+				<height>20</height>
+				<width>200</width>
+				<label>13376</label>
+				<font>font12</font>
+				<aligny>center</aligny>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+			</control>
+			<control type="label">
+				<description>Volumelabel</description>
+				<posx>375</posx>
+				<posy>0</posy>
+				<height>20</height>
+				<width>200</width>
+				<label>$INFO[Control.GetLabel(1)]</label>
+				<font>font12</font>
+				<align>right</align>
+				<aligny>center</aligny>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+			</control>
+			<control type="progress" id="2">
+				<description>Volume</description>
+				<posx>0</posx>
+				<posy>23</posy>
+				<width>380</width>
+				<height>20</height>
+				<info>Player.Volume</info>
+			</control>
+			<control type="slider" id="1">
+				<description>Volume Slider</description>
+				<posx>0</posx>
+				<posy>23</posy>
+				<width>380</width>
+				<height>20</height>
+ 				<info>Player.Volume</info>
+				<action>Volume</action>
+				<texturesliderbar>OSDProgressBack2.png</texturesliderbar>
+				<textureslidernib>OSDSliderNib.png</textureslidernib>
+				<textureslidernibfocus>OSDSliderNib.png</textureslidernibfocus>
+			</control>
+			<control type="image">
+				<posx>390</posx>
+				<posy>-8</posy>
 				<width>2</width>
 				<height>62</height>
 				<texture>header-divide.png</texture>
