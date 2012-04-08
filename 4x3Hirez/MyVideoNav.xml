@@ -109,7 +109,6 @@
 						<description>Search</description>
 						<include>ButtonCommonValues2</include>
 						<label>137</label>
-						<visible>false</visible>
 					</control>
 					<control type="radiobutton" id="7">
 						<description>Stack Toggle</description>
