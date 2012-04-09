@@ -19,7 +19,7 @@
 			<control type="image">
 				<posx>0</posx>
 				<posy>20</posy>
-				<width>1280</width>
+				<width>ScreenWidth</width>
 				<height>64</height>
 				<texture>header.png</texture>
 			</control>

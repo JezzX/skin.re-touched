@@ -27,7 +27,7 @@
 			<include>VisibleFadeEffect</include>
 			<posx>0</posx>
 			<posy>100</posy>
-			<width>1280</width>
+			<width>ScreenWidth</width>
 			<height>50</height>
 			<align>center</align>
 			<onup>9000</onup>

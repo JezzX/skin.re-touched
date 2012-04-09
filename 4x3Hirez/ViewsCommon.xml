@@ -915,7 +915,7 @@
 			<visible>Control.IsVisible(501)</visible>
 			<posx>0</posx>
 			<posy>680</posy>
-			<width>1280</width>
+			<width>ScreenWidth</width>
 			<height>45</height>
 			<align>center</align>
 			<itemgap>2</itemgap>

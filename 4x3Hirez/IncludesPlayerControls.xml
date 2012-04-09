@@ -111,7 +111,7 @@
 				</control>
 				<control type="label">
 					<description>Normal Header label</description>
-					<posx>1260</posx>
+					<posx>20r</posx>
 					<posy>5</posy>
 					<width>300</width>
 					<height>25</height>
@@ -124,7 +124,7 @@
 				</control>
 				<control type="label">
 					<description>Partymode Header label</description>
-					<posx>1260</posx>
+					<posx>20r</posx>
 					<posy>5</posy>
 					<width>300</width>
 					<height>25</height>
@@ -136,7 +136,7 @@
 					<visible>!MusicPartyMode.Enabled</visible>
 				</control>
 				<control type="label">
-					<posx>1260</posx>
+					<posx>20r</posx>
 					<posy>160</posy>
 					<width>800</width>
 					<height>25</height>
@@ -436,7 +436,7 @@
 				</control>
 				<control type="label">
 					<description>Chapter label</description>
-					<posx>1260</posx>
+					<posx>20r</posx>
 					<posy>5</posy>
 					<width>1200</width>
 					<height>25</height>
@@ -448,7 +448,7 @@
 					<visible>Player.ChapterCount</visible>
 				</control>
 				<control type="label">
-					<posx>1260</posx>
+					<posx>20r</posx>
 					<posy>160</posy>
 					<width>800</width>
 					<height>25</height>
@@ -465,7 +465,7 @@
 		<control type="image">
 			<posx>0</posx>
 			<posy>20</posy>
-			<width>1280</width>
+			<width>ScreenWidth</width>
 			<height>64</height>
 			<texture>header.png</texture>
 		</control>
@@ -679,7 +679,7 @@
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
-				<width>1280</width>
+				<width>ScreenWidth</width>
 				<height>100</height>
 				<texture>floor.png</texture>
 			</control>
@@ -694,7 +694,7 @@
 				<label>$INFO[Player.Time(hh:mm:ss)]</label>
 			</control>
 			<control type="label">
-				<posx>1100</posx>
+				<posx>180r</posx>
 				<posy>0</posy>
 				<width>180</width>
 				<height>32</height>
