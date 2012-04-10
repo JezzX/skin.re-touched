@@ -112,10 +112,10 @@
 				</control>
 				<control type="image">
 					<description>current weather icon</description>
-					<posx>260</posx>
+					<posx>240</posx>
 					<posy>150</posy>
-					<width>240</width>
-					<height>250</height>
+					<width>280</width>
+					<height>280</height>
 					<info>Window.Property(Current.ConditionIcon)</info>
 					<aspectratio>keep</aspectratio>
 				</control>
@@ -307,11 +307,19 @@
 			<control type="group">
 				<posx>600</posx>
 				<posy>130</posy>
-				<control type="panel" id="50">
+				<visible>Weather.IsFetched + !IsEmpty(Window.Property(Day0.Title))</visible>
+				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
 					<width>600</width>
 					<height>720</height>
+					<texture border="20">ShadowBorder2.png</texture>
+				</control>
+				<control type="panel" id="50">
+					<posx>20</posx>
+					<posy>20</posy>
+					<width>560</width>
+					<height>680</height>
 					<onleft>9000</onleft>
 					<onright>61</onright>
 					<onup>50</onup>
@@ -319,41 +327,39 @@
 					<viewtype label="535">list</viewtype>
 					<pagecontrol>60</pagecontrol>
 					<scrolltime>200</scrolltime>
-					<itemlayout height="360" width="300">
+					<itemlayout height="170" width="560">
 						<control type="image">
 							<posx>0</posx>
 							<posy>0</posy>
-							<width>300</width>
-							<height>360</height>
+							<width>560</width>
+							<height>170</height>
 							<texture border="5">SubBack.png</texture>
-							<bordertexture border="20">ShadowBorder2.png</bordertexture>
-							<bordersize>20</bordersize>
+						</control>
+						<control type="image">
+							<posx>300</posx>
+							<posy>2</posy>
+							<width>260</width>
+							<height>164</height>
+							<aspectratio>scale</aspectratio>
+							<texture>$INFO[ListItem.ActualIcon]</texture>
 						</control>
 						<control type="label">
-							<posx>150</posx>
-							<posy>30</posy>
+							<posx>20</posx>
+							<posy>10</posy>
 							<width>240</width>
 							<height>25</height>
 							<font>font13_title</font>
 							<textcolor>white</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<selectedcolor>selected</selectedcolor>
-							<align>center</align>
+							<align>left</align>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
-						<control type="image">
-							<posx>30</posx>
-							<posy>50</posy>
-							<width>240</width>
-							<height>180</height>
-							<aspectratio>keep</aspectratio>
-							<texture>$INFO[ListItem.ActualIcon]</texture>
-						</control>
 						<control type="label">
-							<posx>95</posx>
-							<posy>240</posy>
-							<width>130</width>
+							<posx>100</posx>
+							<posy>70</posy>
+							<width>200</width>
 							<height>25</height>
 							<font>font13</font>
 							<textcolor>white</textcolor>
@@ -365,9 +371,9 @@
 							<visible>!IsEmpty(ListItem.Property(HighTemp))</visible>
 						</control>
 						<control type="label">
-							<posx>205</posx>
-							<posy>240</posy>
-							<width>130</width>
+							<posx>210</posx>
+							<posy>70</posy>
+							<width>200</width>
 							<height>25</height>
 							<font>font13</font>
 							<textcolor>white</textcolor>
@@ -379,53 +385,51 @@
 							<visible>!IsEmpty(ListItem.Property(HighTemp))</visible>
 						</control>
 						<control type="textbox">
-							<posx>30</posx>
-							<posy>290</posy>
-							<width>240</width>
+							<posx>20</posx>
+							<posy>120</posy>
+							<width>280</width>
 							<height>40</height>
-							<font>font12</font>
+							<font>font13</font>
 							<textcolor>white</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<selectedcolor>selected</selectedcolor>
-							<align>center</align>
+							<align>left</align>
 							<label>$INFO[ListItem.Property(Outlook)]</label>
 						</control>
 					</itemlayout>
-					<focusedlayout height="360" width="300">
+					<focusedlayout height="170" width="560">
 						<control type="image">
 							<posx>0</posx>
 							<posy>0</posy>
-							<width>300</width>
-							<height>360</height>
+							<width>560</width>
+							<height>170</height>
 							<texture border="5">SubBack.png</texture>
-							<bordertexture border="20">ShadowBorder2.png</bordertexture>
-							<bordersize>20</bordersize>
+						</control>
+						<control type="image">
+							<posx>300</posx>
+							<posy>2</posy>
+							<width>260</width>
+							<height>164</height>
+							<aspectratio>scale</aspectratio>
+							<texture>$INFO[ListItem.ActualIcon]</texture>
 						</control>
 						<control type="label">
-							<posx>150</posx>
-							<posy>30</posy>
+							<posx>20</posx>
+							<posy>10</posy>
 							<width>240</width>
 							<height>25</height>
 							<font>font13_title</font>
 							<textcolor>white</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<selectedcolor>selected</selectedcolor>
-							<align>center</align>
+							<align>left</align>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
-						<control type="image">
-							<posx>30</posx>
-							<posy>50</posy>
-							<width>240</width>
-							<height>180</height>
-							<aspectratio>keep</aspectratio>
-							<texture>$INFO[ListItem.ActualIcon]</texture>
-						</control>
 						<control type="label">
-							<posx>95</posx>
-							<posy>240</posy>
-							<width>130</width>
+							<posx>100</posx>
+							<posy>70</posy>
+							<width>200</width>
 							<height>25</height>
 							<font>font13</font>
 							<textcolor>white</textcolor>
@@ -437,9 +441,9 @@
 							<visible>!IsEmpty(ListItem.Property(HighTemp))</visible>
 						</control>
 						<control type="label">
-							<posx>205</posx>
-							<posy>240</posy>
-							<width>130</width>
+							<posx>210</posx>
+							<posy>70</posy>
+							<width>200</width>
 							<height>25</height>
 							<font>font13</font>
 							<textcolor>white</textcolor>
@@ -451,15 +455,15 @@
 							<visible>!IsEmpty(ListItem.Property(HighTemp))</visible>
 						</control>
 						<control type="textbox">
-							<posx>30</posx>
-							<posy>290</posy>
-							<width>240</width>
+							<posx>20</posx>
+							<posy>120</posy>
+							<width>280</width>
 							<height>40</height>
-							<font>font12</font>
+							<font>font13</font>
 							<textcolor>white</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<selectedcolor>selected</selectedcolor>
-							<align>center</align>
+							<align>left</align>
 							<label>$INFO[ListItem.Property(Outlook)]</label>
 						</control>
 					</focusedlayout>
