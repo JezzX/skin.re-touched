@@ -13,8 +13,8 @@
 			<onclick>PreviousMenu</onclick>
 		</control>
 		<control type="group">
-			<posx>68</posx>
-			<posy>205r</posy>
+			<posx>470r</posx>
+			<posy>200r</posy>
 			<animation effect="slide" start="0,0" end="112,0" time="0" condition="System.HasLoginScreen | IntegerGreaterThan(System.ProfileCount,1)">Conditional</animation>
 			<control type="image">
 				<posx>0</posx>
@@ -22,14 +22,6 @@
 				<width>450</width>
 				<height>70</height>
 				<texture border="5">PlayerControls-Background.png</texture>
-			</control>
-			<control type="image">
-				<description>Panel Arrow image</description>
-				<posx>200</posx>
-				<posy>65</posy>
-				<width>50</width>
-				<height>40</height>
-				<texture>arrow-big-down.png</texture>
 			</control>
 			<control type="label">
 				<description>label</description>

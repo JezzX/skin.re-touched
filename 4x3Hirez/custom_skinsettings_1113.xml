@@ -215,7 +215,7 @@
 			<posx>40</posx>
 			<posy>140</posy>
 			<width>920</width>
-			<height>670</height>
+			<height>750</height>
 			<itemgap>-1</itemgap>
 			<pagecontrol>30</pagecontrol>
 			<onup>9</onup>
@@ -223,63 +223,6 @@
 			<onleft>2</onleft>
 			<onright>30</onright>
 			<visible>Skin.String(SkinSettings,2)</visible>
-			<control type="label" id="201">
-				<height>50</height>
-				<width>920</width>
-				<font>font13_title</font>
-				<label>31501</label>
-				<textcolor>black</textcolor>
-				<align>center</align>
-				<aligny>center</aligny>
-			</control>
-			<control type="button" id="202">
-				<description>Home Addon Button</description>
-				<height>55</height>
-				<width>920</width>
-				<font>font13</font>
-				<textcolor>black</textcolor>
-				<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
-				<texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
-				<label>$LOCALIZE[31551] 1</label>
-				<label2>$INFO[system.addontitle(Skin.String(HomeAddonButton1))]</label2>
-				<onclick>Skin.SetAddon(HomeAddonButton1,xbmc.addon.video)</onclick>
-			</control>
-			<control type="button" id="203">
-				<description>Home Addon Button</description>
-				<height>55</height>
-				<width>920</width>
-				<font>font13</font>
-				<textcolor>black</textcolor>
-				<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
-				<texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
-				<label>$LOCALIZE[31551] 2</label>
-				<label2>$INFO[system.addontitle(Skin.String(HomeAddonButton2))]</label2>
-				<onclick>Skin.SetAddon(HomeAddonButton2,xbmc.addon.video)</onclick>
-			</control>
-			<control type="button" id="204">
-				<description>Home Addon Button</description>
-				<height>55</height>
-				<width>920</width>
-				<font>font13</font>
-				<textcolor>black</textcolor>
-				<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
-				<texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
-				<label>$LOCALIZE[31551] 3</label>
-				<label2>$INFO[system.addontitle(Skin.String(HomeAddonButton3))]</label2>
-				<onclick>Skin.SetAddon(HomeAddonButton3,xbmc.addon.video)</onclick>
-			</control>
-			<control type="button" id="205">
-				<description>Home Addon Button</description>
-				<height>55</height>
-				<width>920</width>
-				<font>font13</font>
-				<textcolor>black</textcolor>
-				<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
-				<texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
-				<label>$LOCALIZE[31551] 4</label>
-				<label2>$INFO[system.addontitle(Skin.String(HomeAddonButton4))]</label2>
-				<onclick>Skin.SetAddon(HomeAddonButton4,xbmc.addon.video)</onclick>
-			</control>
 			<control type="label" id="220">
 				<height>50</height>
 				<width>920</width>
@@ -301,12 +244,165 @@
 				<label2>$INFO[system.addontitle(Skin.String(SubtitleScript_Path))]</label2>
 				<onclick>Skin.SetAddon(SubtitleScript_Path,xbmc.python.subtitles)</onclick>
 			</control>
+			<control type="label" id="201">
+				<height>50</height>
+				<width>920</width>
+				<font>font13_title</font>
+				<label>31501</label>
+				<textcolor>black</textcolor>
+				<align>center</align>
+				<aligny>center</aligny>
+			</control>
+			<control type="button" id="202">
+				<description>Home Addon Button</description>
+				<height>55</height>
+				<width>920</width>
+				<font>font13</font>
+				<textcolor>black</textcolor>
+				<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
+				<texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
+				<label>$LOCALIZE[31551] 1</label>
+				<label2>$INFO[system.addontitle(Skin.String(HomeAddonButton1))]</label2>
+				<onclick>Skin.SetAddon(HomeAddonButton1,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.python.script)</onclick>
+			</control>
+			<control type="button" id="203">
+				<description>Home Addon Button</description>
+				<height>55</height>
+				<width>920</width>
+				<font>font13</font>
+				<textcolor>black</textcolor>
+				<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
+				<texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
+				<label>$LOCALIZE[31551] 2</label>
+				<label2>$INFO[system.addontitle(Skin.String(HomeAddonButton2))]</label2>
+				<onclick>Skin.SetAddon(HomeAddonButton2,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.python.script)</onclick>
+			</control>
+			<control type="button" id="204">
+				<description>Home Addon Button</description>
+				<height>55</height>
+				<width>920</width>
+				<font>font13</font>
+				<textcolor>black</textcolor>
+				<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
+				<texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
+				<label>$LOCALIZE[31551] 3</label>
+				<label2>$INFO[system.addontitle(Skin.String(HomeAddonButton3))]</label2>
+				<onclick>Skin.SetAddon(HomeAddonButton3,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.python.script)</onclick>
+			</control>
+			<control type="button" id="205">
+				<description>Home Addon Button</description>
+				<height>55</height>
+				<width>920</width>
+				<font>font13</font>
+				<textcolor>black</textcolor>
+				<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
+				<texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
+				<label>$LOCALIZE[31551] 4</label>
+				<label2>$INFO[system.addontitle(Skin.String(HomeAddonButton4))]</label2>
+				<onclick>Skin.SetAddon(HomeAddonButton4,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.python.script)</onclick>
+			</control>
+			<control type="button" id="206">
+				<description>Home Addon Button</description>
+				<height>55</height>
+				<width>920</width>
+				<font>font13</font>
+				<textcolor>black</textcolor>
+				<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
+				<texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
+				<label>$LOCALIZE[31551] 5</label>
+				<label2>$INFO[system.addontitle(Skin.String(HomeAddonButton5))]</label2>
+				<onclick>Skin.SetAddon(HomeAddonButton5,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.python.script)</onclick>
+			</control>
+			<control type="button" id="207">
+				<description>Home Addon Button</description>
+				<height>55</height>
+				<width>920</width>
+				<font>font13</font>
+				<textcolor>black</textcolor>
+				<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
+				<texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
+				<label>$LOCALIZE[31551] 6</label>
+				<label2>$INFO[system.addontitle(Skin.String(HomeAddonButton6))]</label2>
+				<onclick>Skin.SetAddon(HomeAddonButton6,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.python.script)</onclick>
+			</control>
+			<control type="button" id="208">
+				<description>Home Addon Button</description>
+				<height>55</height>
+				<width>920</width>
+				<font>font13</font>
+				<textcolor>black</textcolor>
+				<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
+				<texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
+				<label>$LOCALIZE[31551] 7</label>
+				<label2>$INFO[system.addontitle(Skin.String(HomeAddonButton7))]</label2>
+				<onclick>Skin.SetAddon(HomeAddonButton7,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.python.script)</onclick>
+			</control>
+			<control type="button" id="209">
+				<description>Home Addon Button</description>
+				<height>55</height>
+				<width>920</width>
+				<font>font13</font>
+				<textcolor>black</textcolor>
+				<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
+				<texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
+				<label>$LOCALIZE[31551] 8</label>
+				<label2>$INFO[system.addontitle(Skin.String(HomeAddonButton8))]</label2>
+				<onclick>Skin.SetAddon(HomeAddonButton8,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.python.script)</onclick>
+			</control>
+			<control type="button" id="210">
+				<description>Home Addon Button</description>
+				<height>55</height>
+				<width>920</width>
+				<font>font13</font>
+				<textcolor>black</textcolor>
+				<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
+				<texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
+				<label>$LOCALIZE[31551] 9</label>
+				<label2>$INFO[system.addontitle(Skin.String(HomeAddonButton9))]</label2>
+				<onclick>Skin.SetAddon(HomeAddonButton9,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.python.script)</onclick>
+			</control>
+			<control type="button" id="211">
+				<description>Home Addon Button</description>
+				<height>55</height>
+				<width>920</width>
+				<font>font13</font>
+				<textcolor>black</textcolor>
+				<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
+				<texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
+				<label>$LOCALIZE[31551] 10</label>
+				<label2>$INFO[system.addontitle(Skin.String(HomeAddonButton10))]</label2>
+				<onclick>Skin.SetAddon(HomeAddonButton10,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.python.script)</onclick>
+			</control>
+			<control type="button" id="212">
+				<description>Home Addon Button</description>
+				<height>55</height>
+				<width>920</width>
+				<font>font13</font>
+				<textcolor>black</textcolor>
+				<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
+				<texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
+				<label>$LOCALIZE[31551] 11</label>
+				<label2>$INFO[system.addontitle(Skin.String(HomeAddonButton11))]</label2>
+				<onclick>Skin.SetAddon(HomeAddonButton11,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.python.script)</onclick>
+			</control>
+			<control type="button" id="213">
+				<description>Home Addon Button</description>
+				<height>55</height>
+				<width>920</width>
+				<font>font13</font>
+				<textcolor>black</textcolor>
+				<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
+				<texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
+				<label>$LOCALIZE[31551] 12</label>
+				<label2>$INFO[system.addontitle(Skin.String(HomeAddonButton12))]</label2>
+				<onclick>Skin.SetAddon(HomeAddonButton12,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.python.script)</onclick>
+			</control>
 		</control>
 		<control type="scrollbar" id="30">
 			<posx>975</posx>
 			<posy>120</posy>
-			<width>20</width>
-			<height>670</height>
+			<width>25</width>
+			<height>750</height>
 			<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
 			<texturesliderbar border="2,16,2,16">ScrollBarV_bar.png</texturesliderbar>
 			<texturesliderbarfocus border="2,16,2,16">ScrollBarV_bar_focus.png</texturesliderbarfocus>
