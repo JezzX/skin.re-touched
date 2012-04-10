@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon
-  id="skin.touched"
+  id="skin.retouched"
   version="1.0.0"
-  name="Touched"
+  name="re-Touched"
   provider-name="Jezz_X">
   <requires>
     <import addon="xbmc.gui" version="3.00"/>
