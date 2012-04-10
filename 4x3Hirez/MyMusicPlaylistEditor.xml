@@ -14,7 +14,7 @@
 		</control>
 		<control type="group">
 			<posx>40</posx>
-			<posy>130</posy>
+			<posy>110</posy>
 			<include>Window_OpenClose_Animation_Zoom</include>
 			<control type="label">
 				<posx>0</posx>
@@ -156,7 +156,7 @@
 		<control type="group">
 			<include>Window_OpenClose_Animation_Zoom</include>
 			<posx>650</posx>
-			<posy>130</posy>
+			<posy>110</posy>
 			<control type="label">
 				<posx>0</posx>
 				<posy>0</posy>

@@ -482,7 +482,8 @@
 		</control>
 	</include>
 	<include name="SubMenuCommonLayout">
-		<include>Window_OpenClose_Animation</include>
+		<animation effect="fade" start="100" end="0" time="300" condition="Window.Next(Home)">WindowClose</animation>
+		<animation effect="fade" end="100" start="0" time="300" condition="Window.Previous(Home)">WindowOpen</animation>
 		<posx>10</posx>
 		<posy>105r</posy>
 		<width>620</width>
@@ -739,6 +740,133 @@
 				<font>font30</font>
 			</control>
 		</control>
+	</include>
+	<include name="MediaBladeLeft">
+		<control type="group">
+			<animation effect="slide" start="0,0" end="-128,0" time="300" tween="quadratic" easing="out" condition="Window.Next(Home)">WindowClose</animation>
+			<animation effect="slide" end="0,0" start="-128,0" time="300" tween="quadratic" easing="out" condition="Window.Previous(Home)">WindowOpen</animation>
+			<posx>0</posx>
+			<posy>140</posy>
+			<control type="image">
+				<posx>-30</posx>
+				<posy>0</posy>
+				<width>128</width>
+				<height>700</height>
+				<texture border="0,45,18,45">MediaBlade.png</texture>
+			</control>
+			<control type="list" id="9000">
+				<posx>0</posx>
+				<posy>48</posy>
+				<width>80</width>
+				<height>601</height>
+				<onleft>9000</onleft>
+				<onright>1000</onright>
+				<onup>10</onup>
+				<ondown>10</ondown>
+				<pagecontrol>-</pagecontrol>
+				<scrolltime>300</scrolltime>
+				<orientation>vertical</orientation>
+				<itemlayout height="100" width="80">
+					<control type="image">
+						<posx>0</posx>
+						<posy>-1</posy>
+						<width>80</width>
+						<height>2</height>
+						<texture>HomeSeperator.png</texture>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>99</posy>
+						<width>80</width>
+						<height>2</height>
+						<texture>HomeSeperator.png</texture>
+					</control>
+					<control type="image">
+						<posx>10</posx>
+						<posy>10</posy>
+						<width>60</width>
+						<height>80</height>
+						<texture>$INFO[ListItem.Icon]</texture>
+					</control>
+				</itemlayout>
+				<focusedlayout height="100" width="80">
+					<control type="image">
+						<posx>0</posx>
+						<posy>-1</posy>
+						<width>80</width>
+						<height>2</height>
+						<texture>HomeSeperator.png</texture>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>99</posy>
+						<width>80</width>
+						<height>2</height>
+						<texture>HomeSeperator.png</texture>
+					</control>
+					<control type="image">
+						<posx>10</posx>
+						<posy>10</posy>
+						<width>60</width>
+						<height>80</height>
+						<texture>$INFO[ListItem.Icon]</texture>
+					</control>
+				</focusedlayout>
+				<content>
+					<include>HomeMainMenuItems</include>
+				</content>
+			</control>
+		</control>
+	</include>
+	<include name="HomeMainMenuItems">
+		<item id="1">
+			<label>3</label>
+			<onclick condition="StringCompare(Window(Home).Property(VideosDirectLink),True)">ActivateWindow(Videos)</onclick>
+			<onclick condition="!StringCompare(Window(Home).Property(VideosDirectLink),True)">ActivateWindow(Videos,root)</onclick>
+			<onclick>ClearProperty(VideosDirectLink,Home)</onclick>
+			<icon>icon-videos.png</icon>
+			<thumb>-</thumb>
+			<visible>!Skin.HasSetting(HideHomeButtonVideo)</visible>
+		</item>
+		<item id="2">
+			<label>20342</label>
+			<onclick>SetProperty(VideosDirectLink,True,Home)</onclick>
+			<onclick>ActivateWindow(Videos,MovieTitles,Return)</onclick>
+			<icon>icon-movies.png</icon>
+			<thumb>-</thumb>
+			<visible>Library.HasContent(Movies)</visible>
+			<visible>!Skin.HasSetting(HideHomeButtonMovies)</visible>
+		</item>
+		<item id="3">
+			<label>20343</label>
+			<onclick>SetProperty(VideosDirectLink,True,Home)</onclick>
+			<onclick>ActivateWindow(Videos,TVShowTitles,Return)</onclick>
+			<icon>icon-tv.png</icon>
+			<thumb>-</thumb>
+			<visible>Library.HasContent(TVShows)</visible>
+			<visible>!Skin.HasSetting(HideHomeButtonTVShows)</visible>
+		</item>
+		<item id="4">
+			<label>2</label>
+			<onclick>ActivateWindow(Music)</onclick>
+			<icon>icon-music.png</icon>
+			<thumb>-</thumb>
+			<visible>!Skin.HasSetting(HideHomeButtonMusic)</visible>
+		</item>
+		<item id="5">
+			<label>1</label>
+			<onclick>ActivateWindow(Pictures)</onclick>
+			<icon>icon-pictures.png</icon>
+			<thumb>-</thumb>
+			<visible>!Skin.HasSetting(HideHomeButtonPictures)</visible>
+		</item>
+		<item id="6">
+			<label>0</label>
+			<onclick>ActivateWindow(Programs,Addons,return)</onclick>
+			<icon>icon-programs.png</icon>
+			<thumb>-</thumb>
+			<visible>!Skin.HasSetting(HideHomeButtonPrograms)</visible>
+		</item>
 	</include>
 	<include name="Window_OpenClose_Animation">
 		<animation effect="fade" time="250">WindowOpen</animation>

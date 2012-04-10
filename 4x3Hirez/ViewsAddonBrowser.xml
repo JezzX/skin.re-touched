@@ -1,9 +1,9 @@
 <includes>
 	<include name="CommonRootViewAddons">
 		<control type="panel" id="50">
-			<posx>50</posx>
+			<posx>115</posx>
 			<posy>120</posy>
-			<width>1180</width>
+			<width>1100</width>
 			<height>720</height>
 			<onleft>2</onleft>
 			<onright>60</onright>
@@ -12,11 +12,11 @@
 			<viewtype label="535">list</viewtype>
 			<pagecontrol>60</pagecontrol>
 			<scrolltime>200</scrolltime>
-			<itemlayout height="60" width="1180">
+			<itemlayout height="60" width="1100">
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>1180</width>
+					<width>1100</width>
 					<height>60</height>
 					<texture border="5">ListNF.png</texture>
 				</control>
@@ -30,7 +30,7 @@
 				<control type="label">
 					<posx>75</posx>
 					<posy>0</posy>
-					<width>1000</width>
+					<width>920</width>
 					<height>60</height>
 					<font>font16</font>
 					<textcolor>grey2</textcolor>
@@ -40,7 +40,7 @@
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 				<control type="label">
-					<posx>1130</posx>
+					<posx>1050</posx>
 					<posy>2</posy>
 					<width>400</width>
 					<height>30</height>
@@ -53,7 +53,7 @@
 					<visible>!stringcompare(ListItem.Property(Addon.Status),$LOCALIZE[305])</visible>
 				</control>
 				<control type="label">
-					<posx>1130</posx>
+					<posx>1050</posx>
 					<posy>2</posy>
 					<width>400</width>
 					<height>30</height>
@@ -67,7 +67,7 @@
 				</control>
 				<control type="image">
 					<description>Rating value</description>
-					<posx>1030</posx>
+					<posx>950</posx>
 					<posy>30</posy>
 					<width>100</width>
 					<height>25</height>
@@ -75,7 +75,7 @@
 					<texture fallback="light/left_rating/rating0.png">$INFO[ListItem.Property(Addon.StarRating),light/left_rating/]</texture>
 				</control>
 				<control type="image">
-					<posx>1140</posx>
+					<posx>1060</posx>
 					<posy>15</posy>
 					<width>30</width>
 					<height>30</height>
@@ -84,11 +84,11 @@
 					<visible>stringcompare(ListItem.Label2,$LOCALIZE[305])</visible>
 				</control>
 			</itemlayout>
-			<focusedlayout height="60" width="1180">
+			<focusedlayout height="60" width="1100">
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>1180</width>
+					<width>1100</width>
 					<height>60</height>
 					<texture border="5">ListFO.png</texture>
 					<include>VisibleFadeEffect</include>
@@ -103,7 +103,7 @@
 				<control type="label">
 					<posx>75</posx>
 					<posy>0</posy>
-					<width>1000</width>
+					<width>920</width>
 					<height>60</height>
 					<font>font16</font>
 					<textcolor>black</textcolor>
@@ -113,7 +113,7 @@
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 				<control type="label">
-					<posx>1130</posx>
+					<posx>1050</posx>
 					<posy>2</posy>
 					<width>400</width>
 					<height>30</height>
@@ -126,7 +126,7 @@
 					<visible>!stringcompare(ListItem.Property(Addon.Status),$LOCALIZE[305])</visible>
 				</control>
 				<control type="label">
-					<posx>1130</posx>
+					<posx>1050</posx>
 					<posy>2</posy>
 					<width>400</width>
 					<height>30</height>
@@ -140,7 +140,7 @@
 				</control>
 				<control type="image">
 					<description>Rating value</description>
-					<posx>1030</posx>
+					<posx>950</posx>
 					<posy>30</posy>
 					<width>100</width>
 					<height>25</height>
@@ -148,7 +148,7 @@
 					<texture fallback="dark/left_rating/rating0.png">$INFO[ListItem.Property(Addon.StarRating),light/left_rating/]</texture>
 				</control>
 				<control type="image">
-					<posx>1140</posx>
+					<posx>1060</posx>
 					<posy>15</posy>
 					<width>30</width>
 					<height>30</height>
