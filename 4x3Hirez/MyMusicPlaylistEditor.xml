@@ -4,6 +4,7 @@
 	<onunload>Skin.Reset(MediaSubMenuVisible)</onunload>
 	<controls>
 		<include>CommonBackground</include>
+		<include>CommonBackgroundOverlay</include>
 		<include>HomeButtonCommons</include>
 		<include>CommonNowPlaying</include>
 		<include>OptionsButtonCommons</include>

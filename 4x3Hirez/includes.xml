@@ -23,56 +23,8 @@
 			<texture fallback="special://skin/background/background.jpg">special://skin/backgrounds/$INFO[Skin.CurrentTheme].jpg</texture>
 		</control>
 		<include>CommonHeader</include>
-		<control type="grouplist" id="9010">
-			<visible>!Window.IsActive(PlayerControls) + Window.IsVisible(Home) + [Library.HasContent(Movies) | Library.HasContent(TVShows) | Library.HasContent(MusicVideos) | Library.HasContent(Music)]</visible>
-			<include>VisibleFadeEffect</include>
-			<posx>0</posx>
-			<posy>100</posy>
-			<width>ScreenWidth</width>
-			<height>50</height>
-			<align>right</align>
-			<onup>9000</onup>
-			<ondown>9002</ondown>
-			<itemgap>0</itemgap>
-			<orientation>Horizontal</orientation>
-			<animation effect="slide" start="0,-50" end="0,0" delay="200" time="200" tween="quadratic" easing="out">WindowOpen</animation>
-			<animation effect="slide" start="0,0" end="0,-50" time="200" tween="quadratic" easing="out">WindowClose</animation>
-			<onleft>9010</onleft>
-			<onright>9010</onright>
-			<control type="image">
-				<width>50</width>
-				<height>50</height>
-				<texture border="0,0,0,3" flipx="true">HomeSubEnd.png</texture>
-			</control>
-			<control type="radiobutton">
-				<include>ButtonHomeSubCommonValues</include>
-				<label>31013</label>
-				<onfocus>Skin.SetString(HomeContentPage,Movies)</onfocus>
-				<selected>StringCompare(Skin.String(HomeContentPage),Movies)</selected>
-				<visible>Library.HasContent(Movies)</visible>
-			</control>
-			<control type="radiobutton">
-				<include>ButtonHomeSubCommonValues</include>
-				<label>31014</label>
-				<onfocus>Skin.SetString(HomeContentPage,TV)</onfocus>
-				<selected>StringCompare(Skin.String(HomeContentPage),TV)</selected>
-				<visible>Library.HasContent(TVShows)</visible>
-			</control>
-			<control type="radiobutton">
-				<include>ButtonHomeSubCommonValues</include>
-				<label>31016</label>
-				<onfocus>Skin.SetString(HomeContentPage,Albums)</onfocus>
-				<selected>StringCompare(Skin.String(HomeContentPage),Albums)</selected>
-				<visible>Library.HasContent(Music)</visible>
-			</control>
-			<control type="radiobutton">
-				<include>ButtonHomeSubCommonValues</include>
-				<label>24001</label>
-				<onfocus>Skin.SetString(HomeContentPage,Addons)</onfocus>
-				<selected>StringCompare(Skin.String(HomeContentPage),Addons)</selected>
-				<visible>IntegerGreaterThan(Container(2400).NumItems,0)</visible>
-			</control>
-		</control>
+	</include>
+	<include name="CommonBackgroundOverlay">
 		<control type="group">
 			<visible>!Window.IsActive(PlayerControls)</visible>
 			<include>VisibleFadeEffect</include>

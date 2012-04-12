@@ -3,6 +3,7 @@
 	<allowoverlay>no</allowoverlay>
 	<controls>
 		<include>CommonBackground</include>
+		<include>CommonBackgroundOverlay</include>
 		<include>HomeButtonCommons</include>
 		<include>CommonNowPlaying</include>
 		<control type="label">
