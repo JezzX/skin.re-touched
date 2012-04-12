@@ -12,7 +12,7 @@
 			<label>$LOCALIZE[8]</label>
 		</control>
 		<control type="group">
-			<posx>72r</posx>
+			<posx>77r</posx>
 			<posy>25</posy>
 			<visible>!Window.IsActive(PlayerControls)</visible>
 			<include>VisibleFadeEffect</include>
@@ -586,11 +586,6 @@
 			<include>SubMenuCommonLayout</include>
 			<content>
 				<item>
-					<label>31200</label>
-					<onclick>ParentDir</onclick>
-					<icon>icon_back.png</icon>
-				</item>
-				<item>
 					<label>184</label>
 					<onclick>Weather.Refresh</onclick>
 					<icon>icon_refresh.png</icon>
@@ -599,6 +594,16 @@
 					<label>31201</label>
 					<onclick>Weather.LocationNext</onclick>
 					<icon>icon_city.png</icon>
+				</item>
+				<item>
+					<label>31200</label>
+					<onclick>ParentDir</onclick>
+					<icon>icon_back.png</icon>
+				</item>
+				<item>
+					<label>1036</label>
+					<onclick>ActivateWindow(Favourites)</onclick>
+					<icon>icon_favourites.png</icon>
 				</item>
 			</content>
 		</control>

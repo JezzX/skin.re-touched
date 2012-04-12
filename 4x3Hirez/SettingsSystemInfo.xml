@@ -11,14 +11,14 @@
 			<include>MediaWindowTitleCommons</include>
 			<label>$LOCALIZE[130]</label>
 		</control>
-		<control type="panel">
+		<control type="panel" id="9002">
 			<visible>!Window.IsActive(PlayerControls)</visible>
 			<include>VisibleFadeEffect</include>
 			<include>SubMenuCommonLayout</include>
 			<content>
 				<item>
 					<label>31200</label>
-					<onclick>PreviousMenu</onclick>
+					<onclick>Back</onclick>
 					<icon>icon_back.png</icon>
 				</item>
 			</content>

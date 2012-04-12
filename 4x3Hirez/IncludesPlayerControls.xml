@@ -484,7 +484,7 @@
 				<height>64</height>
 				<texturenofocus>icon_playlistmusic.png</texturenofocus>
 				<texturefocus>icon_playlistmusic.png</texturefocus>
-				<onclick>PreviousMenu</onclick>
+				<onclick>Back</onclick>
 				<onclick>ActivateWindow(MusicPlaylist)</onclick>
 				<visible>Player.HasAudio</visible>
 			</control>
@@ -494,7 +494,7 @@
 				<height>64</height>
 				<texturenofocus>icon_playlistvideo.png</texturenofocus>
 				<texturefocus>icon_playlistvideo.png</texturefocus>
-				<onclick>PreviousMenu</onclick>
+				<onclick>Back</onclick>
 				<onclick>ActivateWindow(VideoPlaylist)</onclick>
 				<visible>Player.HasVideo</visible>
 			</control>
@@ -667,7 +667,7 @@
 				<width>60</width>
 				<height>60</height>
 				<font>-</font>
-				<onclick>previousmenu</onclick>
+				<onclick>Back</onclick>
 				<texturefocus>icon_close.png</texturefocus>
 				<texturenofocus>icon_close.png</texturenofocus>
 			</control>

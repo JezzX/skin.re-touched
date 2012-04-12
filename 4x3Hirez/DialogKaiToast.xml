@@ -2,8 +2,8 @@
 	<include>Window_OpenClose_Animation</include>
 	<controls>
 		<control type="group">
-			<posx>526r</posx>
-			<posy>110r</posy>
+			<posx>20</posx>
+			<posy>105r</posy>
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
@@ -15,16 +15,16 @@
 				<description>Icon</description>
 				<posx>10</posx>
 				<posy>10</posy>
-				<width>70</width>
+				<width>60</width>
 				<height>60</height>
 				<aspectratio>keep</aspectratio>
 				<texture>DefaultFile.png</texture>
 			</control>
 			<control type="fadelabel" id="401">
 				<description>Line 1 Label</description>
-				<posx>100</posx>
+				<posx>80</posx>
 				<posy>10</posy>
-				<width>370</width>
+				<width>390</width>
 				<height>20</height>
 				<font>font12_title</font>
 				<textcolor>black</textcolor>
@@ -35,9 +35,9 @@
 			</control>
 			<control type="textbox" id="402">
 				<description>Line 2 Label</description>
-				<posx>100</posx>
+				<posx>80</posx>
 				<posy>25</posy>
-				<width>370</width>
+				<width>390</width>
 				<height>40</height>
 				<font>font12</font>
 				<textcolor>black</textcolor>
@@ -47,7 +47,7 @@
 				<description>avatar</description>
 				<posx>10</posx>
 				<posy>10</posy>
-				<width>70</width>
+				<width>60</width>
 				<height>60</height>
 				<aspectratio>keep</aspectratio>
 				<visible>false</visible>
@@ -57,7 +57,7 @@
 				<description>avatar</description>
 				<posx>10</posx>
 				<posy>10</posy>
-				<width>70</width>
+				<width>60</width>
 				<height>60</height>
 				<aspectratio>keep</aspectratio>
 				<visible>false</visible>
@@ -67,7 +67,7 @@
 				<description>avatar</description>
 				<posx>10</posx>
 				<posy>10</posy>
-				<width>70</width>
+				<width>60</width>
 				<height>60</height>
 				<aspectratio>keep</aspectratio>
 				<visible>false</visible>

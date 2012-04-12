@@ -2,7 +2,7 @@
 	<include name="RootViewMetaDataVideo">
 		<control type="panel" id="550">
 			<visible>Container.Content(Movies) | Container.Content(Episodes)</visible>
-			<posx>115</posx>
+			<posx>120</posx>
 			<posy>120</posy>
 			<width>1100</width>
 			<height>720</height>
@@ -428,7 +428,7 @@
 	<include name="WideIconMetaDataView">
 		<control type="panel" id="552">
 			<visible>Container.Content(TVShows)</visible>
-			<posx>115</posx>
+			<posx>120</posx>
 			<posy>130</posy>
 			<width>1100</width>
 			<height>700</height>

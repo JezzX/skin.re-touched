@@ -17,11 +17,6 @@
 			<include>SubMenuCommonLayout</include>
 			<content>
 				<item>
-					<label>31200</label>
-					<onclick>PreviousMenu</onclick>
-					<icon>icon_back.png</icon>
-				</item>
-				<item>
 					<label>13200</label>
 					<onclick>ActivateWindow(Profiles)</onclick>
 					<icon>icon_profile.png</icon>
@@ -35,6 +30,16 @@
 					<label>130</label>
 					<onclick>ActivateWindow(SystemInfo)</onclick>
 					<icon>icon_systeminfo.png</icon>
+				</item>
+				<item>
+					<label>31200</label>
+					<onclick>Back</onclick>
+					<icon>icon_back.png</icon>
+				</item>
+				<item>
+					<label>1036</label>
+					<onclick>ActivateWindow(Favourites)</onclick>
+					<icon>icon_favourites.png</icon>
 				</item>
 			</content>
 		</control>

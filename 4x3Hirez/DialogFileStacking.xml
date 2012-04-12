@@ -22,7 +22,7 @@
 			<height>32</height>
 			<label>-</label>
 			<font>-</font>
-			<onclick>PreviousMenu</onclick>
+			<onclick>Back</onclick>
 			<texturefocus>DialogCloseButton-focus.png</texturefocus>
 			<texturenofocus>DialogCloseButton.png</texturenofocus>
 			<onleft>13</onleft>

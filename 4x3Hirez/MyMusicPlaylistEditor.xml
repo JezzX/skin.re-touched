@@ -305,6 +305,11 @@
 					<onclick>ParentDir</onclick>
 					<icon>icon_back.png</icon>
 				</item>
+				<item>
+					<label>1036</label>
+					<onclick>ActivateWindow(Favourites)</onclick>
+					<icon>icon_favourites.png</icon>
+				</item>
 			</content>
 		</control>
 		<control type="group">

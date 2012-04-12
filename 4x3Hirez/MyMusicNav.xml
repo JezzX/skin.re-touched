@@ -14,11 +14,10 @@
 		<control type="label">
 			<description>Window label</description>
 			<include>MediaWindowTitleCommons</include>
-			<label>$LOCALIZE[10516]</label>
+			<label>$LOCALIZE[10516]$INFO[Container.FolderName, - ]</label>
 		</control>
 		<control type="group">
 			<include>Window_OpenClose_Animation_Zoom</include>
-			<animation effect="slide" start="0,0" end="-10,0" time="400" condition="Control.IsVisible(60)">Conditional</animation>
 			<include>CommonRootView</include> <!-- view id = 50 -->
 			<include>ThumbnailView</include> <!-- view id = 500 -->
 		</control>

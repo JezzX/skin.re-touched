@@ -99,49 +99,17 @@
 				<height>64</height>
 				<texture>floor.png</texture>
 			</control>
-			<control type="group">
-				<posx>122r</posx>
-				<posy>105r</posy>
-				<visible>!Window.IsVisible(LoginScreen) + !Window.IsActive(InfoDialog)</visible>
-				<include>VisibleFadeEffect</include>
-				<control type="image">
-					<posx>16</posx>
-					<posy>80</posy>
-					<width>80</width>
-					<height>40</height>
-					<texture border="5">IconBack_reflect.png</texture>
-				</control>
-				<control type="button">
-					<description>Favourties Button</description>
-					<posx>16</posx>
-					<posy>0</posy>
-					<width>80</width>
-					<height>80</height>
-					<label>-</label>
-					<font>-</font>
-					<texturenofocus border="5">IconBack.png</texturenofocus>
-					<texturefocus border="5">IconBack-focus.png</texturefocus>
-					<onclick>ActivateWindow(Favourites)</onclick>
-				</control>
-				<control type="image">
-					<posx>28</posx>
-					<posy>12</posy>
-					<width>56</width>
-					<height>56</height>
-					<texture>icon_favourites.png</texture>
-				</control>
-				<control type="label">
-					<posx>6</posx>
-					<posy>82</posy>
-					<width>100</width>
-					<height>20</height>
-					<font>font11</font>
-					<textcolor>white</textcolor>
-					<shadowcolor>black</shadowcolor>
-					<align>center</align>
-					<aligny>center</aligny>
-					<label>$LOCALIZE[1036]</label>
-				</control>
+			<control type="image">
+				<description>Window label Position Image</description>
+				<posx>-20</posx>
+				<posy>64r</posy>
+				<width>64</width>
+				<height>64</height>
+				<aspectratio>keep</aspectratio>
+				<texture>TitleBlock.png</texture>
+				<visible>!Window.IsVisible(Home)</visible>
+				<animation effect="fade" time="200" condition="Window.Previous(Home)">WindowOpen</animation>
+				<animation effect="fade" time="200" condition="Window.Next(Home)">WindowClose</animation>
 			</control>
 		</control>
 	</include>
@@ -228,15 +196,17 @@
 		</control>
 	</include>
 	<include name="MediaWindowTitleCommons">
-		<posx>300</posx>
+		<posx>55</posx>
 		<posy>64r</posy>
-		<width>680</width>
+		<width>700</width>
 		<height>64</height>
-		<align>center</align>
+		<align>left</align>
 		<aligny>center</aligny>
 		<font>font13_title</font>
 		<textcolor>white</textcolor>
 		<shadowcolor>black</shadowcolor>
+		<scroll>false</scroll>
+		<include>Window_OpenClose_Animation</include>
 	</include>
 	<include name="WindowTitleCommons">
 		<height>60</height>
@@ -252,7 +222,7 @@
 			<posy>35</posy>
 			<include>Window_OpenClose_Animation</include>
 			<control type="image">
-				<posx>130r</posx>
+				<posx>140r</posx>
 				<posy>0</posy>
 				<width>45</width>
 				<height>45</height>
@@ -261,7 +231,7 @@
 			</control>
 			<control type="label">
 				<description>Page Count Label 1</description>
-				<posx>140r</posx>
+				<posx>150r</posx>
 				<posy>2</posy>
 				<width>500</width>
 				<height>20</height>
@@ -274,7 +244,7 @@
 			</control>
 			<control type="label">
 				<description>Page Count Label 2</description>
-				<posx>140r</posx>
+				<posx>150r</posx>
 				<posy>22</posy>
 				<width>500</width>
 				<height>20</height>
@@ -326,7 +296,7 @@
 	</include>
 	<include name="HomeButtonCommons">
 		<control type="group">
-			<posx>5</posx>
+			<posx>10</posx>
 			<posy>25</posy>
 			<visible>!Window.IsActive(PlayerControls)</visible>
 			<include>VisibleFadeEffect</include>
@@ -353,7 +323,7 @@
 	</include>
 	<include name="OptionsButtonCommons">
 		<control type="group">
-			<posx>72r</posx>
+			<posx>77r</posx>
 			<posy>25</posy>
 			<visible>!Window.IsActive(PlayerControls)</visible>
 			<include>VisibleFadeEffect</include>
@@ -393,7 +363,7 @@
 			<width>60</width>
 			<height>60</height>
 			<font>-</font>
-			<onclick>previousmenu</onclick>
+			<onclick>back</onclick>
 			<texturefocus>icon_close.png</texturefocus>
 			<texturenofocus>icon_close.png</texturenofocus>
 		</control>
@@ -409,16 +379,6 @@
 			<include>SubMenuCommonLayout</include>
 			<content>
 				<item>
-					<label>31200</label>
-					<onclick>ParentDir</onclick>
-					<icon>icon_back.png</icon>
-				</item>
-				<item>
-					<label>31202</label>
-					<onclick>Container.NextViewMode</onclick>
-					<icon>icon_view.png</icon>
-				</item>
-				<item>
 					<label>587</label>
 					<onclick>SendClick(19)</onclick>
 					<icon>icon_filter.png</icon>
@@ -430,15 +390,34 @@
 					<icon>icon_filter_on.png</icon>
 					<visible>!IsEmpty(Window.Property(filter))</visible>
 				</item>
+				<item>
+					<label>31202</label>
+					<onclick>Container.NextViewMode</onclick>
+					<icon>icon_view.png</icon>
+				</item>
+				<item>
+					<label>31200</label>
+					<onclick>ParentDir</onclick>
+					<icon>icon_back.png</icon>
+				</item>
+				<item>
+					<label>1036</label>
+					<onclick>ActivateWindow(Favourites)</onclick>
+					<icon>icon_favourites.png</icon>
+				</item>
 			</content>
 		</control>
 	</include>
 	<include name="SubMenuCommonLayout">
 		<animation effect="fade" start="100" end="0" time="300" condition="Window.Next(Home)">WindowClose</animation>
 		<animation effect="fade" end="100" start="0" time="300" condition="Window.Previous(Home)">WindowOpen</animation>
-		<posx>10</posx>
+		<animation effect="slide" start="0,0" end="112,0" time="0" condition="StringCompare(Container(9002).NumItems,4)">conditional</animation>
+		<animation effect="slide" start="0,0" end="224,0" time="0" condition="StringCompare(Container(9002).NumItems,3)">conditional</animation>
+		<animation effect="slide" start="0,0" end="336,0" time="0" condition="StringCompare(Container(9002).NumItems,2)">conditional</animation>
+		<animation effect="slide" start="0,0" end="448,0" time="0" condition="StringCompare(Container(9002).NumItems,1)">conditional</animation>
+		<posx>570r</posx>
 		<posy>105r</posy>
-		<width>620</width>
+		<width>560</width>
 		<height>120</height>
 		<onleft>9002</onleft>
 		<onright>9002</onright>
@@ -695,21 +674,24 @@
 	</include>
 	<include name="MediaBladeLeft">
 		<control type="group">
-			<animation effect="slide" start="0,0" end="-128,0" time="300" tween="quadratic" easing="out" condition="Window.Next(Home)">WindowClose</animation>
-			<animation effect="slide" end="0,0" start="-128,0" time="300" tween="quadratic" easing="out" condition="Window.Previous(Home)">WindowOpen</animation>
-			<posx>0</posx>
-			<posy>140</posy>
+			<animation effect="slide" start="0,0" end="-400,0" time="400" tween="quadratic" easing="out" condition="Window.Next(Settings) | Window.Next(Weather)">WindowClose</animation>
+			<animation effect="slide" end="0,0" start="-400,0" time="400" tween="quadratic" easing="out" condition="Window.Previous(Settings) | Window.Next(Weather)">WindowOpen</animation>
+			<animation effect="slide" start="0,0" end="-295,0" time="400" tween="quadratic" easing="out" condition="Window.IsVisible(Home) + ![Window.Next(Settings) | Window.Next(Weather)]">WindowClose</animation>
+			<animation effect="slide" end="0,0" start="-295,0" time="400" tween="quadratic" easing="out" condition="Window.IsVisible(Home) + ![Window.Previous(Settings) | Window.Next(Weather)]">WindowOpen</animation>
+			<animation effect="slide" start="0,0" end="295,0" time="400" tween="quadratic" easing="out" condition="Window.IsActive(Home)">Conditional</animation>
+			<posx>-295</posx>
+			<posy>20</posy>
 			<control type="image">
-				<posx>-30</posx>
+				<posx>0</posx>
 				<posy>0</posy>
-				<width>128</width>
-				<height>700</height>
-				<texture border="0,45,18,45">MediaBlade.png</texture>
+				<width>400</width>
+				<height>940</height>
+				<texture border="0,0,18,0">HomeBlade.png</texture>
 			</control>
 			<control type="list" id="9000">
 				<posx>0</posx>
-				<posy>48</posy>
-				<width>80</width>
+				<posy>170</posy>
+				<width>380</width>
 				<height>601</height>
 				<onleft>9000</onleft>
 				<onright>1000</onright>
@@ -718,50 +700,100 @@
 				<pagecontrol>-</pagecontrol>
 				<scrolltime>300</scrolltime>
 				<orientation>vertical</orientation>
-				<itemlayout height="100" width="80">
+				<itemlayout height="100" width="380">
 					<control type="image">
 						<posx>0</posx>
 						<posy>-1</posy>
-						<width>80</width>
+						<width>280</width>
 						<height>2</height>
 						<texture>HomeSeperator.png</texture>
 					</control>
 					<control type="image">
 						<posx>0</posx>
 						<posy>99</posy>
+						<width>280</width>
+						<height>2</height>
+						<texture>HomeSeperator.png</texture>
+					</control>
+					<control type="image">
+						<posx>300</posx>
+						<posy>-1</posy>
 						<width>80</width>
 						<height>2</height>
 						<texture>HomeSeperator.png</texture>
 					</control>
 					<control type="image">
-						<posx>10</posx>
+						<posx>300</posx>
+						<posy>99</posy>
+						<width>80</width>
+						<height>2</height>
+						<texture>HomeSeperator.png</texture>
+					</control>
+					<control type="image">
+						<posx>310</posx>
 						<posy>10</posy>
 						<width>60</width>
 						<height>80</height>
 						<texture>$INFO[ListItem.Icon]</texture>
+					</control>
+					<control type="label">
+						<posx>280</posx>
+						<posy>0</posy>
+						<width>280</width>
+						<height>100</height>
+						<font>font30_title</font>
+						<textcolor>white</textcolor>
+						<align>right</align>
+						<aligny>center</aligny>
+						<label>[UPPERCASE]$INFO[ListItem.Label][/UPPERCASE]</label>
 					</control>
 				</itemlayout>
-				<focusedlayout height="100" width="80">
+				<focusedlayout height="100" width="380">
 					<control type="image">
 						<posx>0</posx>
 						<posy>-1</posy>
-						<width>80</width>
+						<width>280</width>
 						<height>2</height>
 						<texture>HomeSeperator.png</texture>
 					</control>
 					<control type="image">
 						<posx>0</posx>
 						<posy>99</posy>
+						<width>280</width>
+						<height>2</height>
+						<texture>HomeSeperator.png</texture>
+					</control>
+					<control type="image">
+						<posx>300</posx>
+						<posy>-1</posy>
 						<width>80</width>
 						<height>2</height>
 						<texture>HomeSeperator.png</texture>
 					</control>
 					<control type="image">
-						<posx>10</posx>
+						<posx>300</posx>
+						<posy>99</posy>
+						<width>80</width>
+						<height>2</height>
+						<texture>HomeSeperator.png</texture>
+					</control>
+					<control type="image">
+						<posx>310</posx>
 						<posy>10</posy>
 						<width>60</width>
 						<height>80</height>
 						<texture>$INFO[ListItem.Icon]</texture>
+					</control>
+					<control type="label">
+						<posx>280</posx>
+						<posy>0</posy>
+						<width>280</width>
+						<height>100</height>
+						<font>font30_title</font>
+						<textcolor>white</textcolor>
+						<align>right</align>
+						<aligny>center</aligny>
+						<label>[UPPERCASE]$INFO[ListItem.Label][/UPPERCASE]</label>
 					</control>
 				</focusedlayout>
 				<content>

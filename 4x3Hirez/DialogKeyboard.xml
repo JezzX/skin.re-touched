@@ -23,7 +23,7 @@
 			<height>ScreenHeight</height>
 			<texturenofocus>-</texturenofocus>
 			<texturefocus>-</texturefocus>
-			<onclick>PreviousMenu</onclick>
+			<onclick>Back</onclick>
 		</control>
 		<control type="group">
 			<animation effect="slide" start="0,500" end="0,0" time="400" easing="out" tween="quadratic" >WindowOpen</animation>

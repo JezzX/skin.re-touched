@@ -39,7 +39,7 @@
 					<height>64</height>
 					<texturenofocus>icon_playlistmusic.png</texturenofocus>
 					<texturefocus>icon_playlistmusic.png</texturefocus>
-					<onclick>PreviousMenu</onclick>
+					<onclick>Back</onclick>
 					<onclick>ActivateWindow(MusicPlaylist)</onclick>
 				</control>
 				<control type="image">

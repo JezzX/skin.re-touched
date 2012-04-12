@@ -14,7 +14,7 @@
 			<height>ScreenHeight</height>
 			<texturenofocus>-</texturenofocus>
 			<texturefocus>-</texturefocus>
-			<onclick>PreviousMenu</onclick>
+			<onclick>Back</onclick>
 		</control>
 		<control type="group">
 			<posx>480</posx>

@@ -14,7 +14,7 @@
 		<control type="label">
 			<description>Window label</description>
 			<include>MediaWindowTitleCommons</include>
-			<label>$LOCALIZE[24001]</label>
+			<label>$LOCALIZE[24001]$INFO[Container.FolderName, - ]</label>
 		</control>
 		<control type="group">
 			<include>Window_OpenClose_Animation_Zoom</include>
