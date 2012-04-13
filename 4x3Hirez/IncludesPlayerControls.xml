@@ -625,8 +625,8 @@
 				<texturefocus border="5">floor_buttonFO.png</texturefocus>
 				<label>31008</label>
 				<onclick>fullscreen</onclick>
-				<textureradiofocus>GoFullscreen2.png</textureradiofocus>
-				<textureradionofocus>GoFullscreen2.png</textureradionofocus>
+				<textureradiofocus>GoFullscreen.png</textureradiofocus>
+				<textureradionofocus>GoFullscreen.png</textureradionofocus>
 				<visible>!Window.IsVisible(Visualisation) + !Window.IsVisible(FullScreenVideo) + !Window.IsVisible(Karaoke)</visible>
 			</control>
 			<control type="radiobutton">
@@ -645,8 +645,8 @@
 				<onclick>Dialog.Close(VideoOSD,true)</onclick>
 				<onclick>Dialog.Close(MusicOSD,true)</onclick>
 				<onclick>fullscreen</onclick>
-				<textureradiofocus flipx="true" flipy="true">GoFullscreen2.png</textureradiofocus>
-				<textureradionofocus flipx="true" flipy="true">GoFullscreen2.png</textureradionofocus>
+				<textureradiofocus flipx="true" flipy="true">GoFullscreen.png</textureradiofocus>
+				<textureradionofocus flipx="true" flipy="true">GoFullscreen.png</textureradionofocus>
 				<visible>Window.IsVisible(Visualisation) | Window.IsVisible(FullScreenVideo) + !Window.IsVisible(Karaoke)</visible>
 			</control>
 		</control>
