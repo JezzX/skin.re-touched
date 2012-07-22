@@ -1,5 +1,4 @@
 <window id="136">
-	<include>16x9_xPos_Relocation</include>
 	<animation effect="fade" time="100">WindowOpen</animation>
 	<animation effect="fade" time="200">WindowClose</animation>
 	<coordinates>
@@ -19,6 +18,7 @@
 		<control type="group">
 			<posx>490</posx>
 			<posy>420</posy>
+			<include>16x9_xPos_Relocation</include>
 			<control type="image">
 				<description>background image</description>
 				<posx>0</posx>

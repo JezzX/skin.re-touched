@@ -31,6 +31,7 @@
 			<posx>50</posx>
 			<posy>140</posy>
 			<include>Window_OpenClose_Animation_Zoom</include>
+			<include>16x9_xPos_Relocation</include>
 			<control type="grouplist" id="9000">
 				<posx>0</posx>
 				<posy>0</posy>

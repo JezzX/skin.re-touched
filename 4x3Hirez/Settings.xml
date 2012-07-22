@@ -44,6 +44,7 @@
 			</content>
 		</control>
 		<control type="panel" id="9000">
+			<include>16x9_xPos_Relocation</include>
 			<include>Window_OpenClose_Animation_Zoom</include>
 			<posx>30</posx>
 			<posy>110</posy>

@@ -33,6 +33,7 @@
 			<posx>40</posx>
 			<posy>140</posy>
 			<include>Window_OpenClose_Animation_Zoom</include>
+			<include>16x9_xPos_Relocation</include>
 			<control type="radiobutton" id ="4">
 				<description>Enable Login screen</description>
 				<posx>0</posx>

@@ -12,6 +12,7 @@
 		</control>
 		<control type="group">
 			<include>Window_OpenClose_Animation_Zoom</include>
+			<include>16x9_xPos_Relocation</include>
 			<control type="label">
 				<posx>295</posx>
 				<posy>140</posy>

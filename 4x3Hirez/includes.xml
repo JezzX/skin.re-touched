@@ -44,7 +44,8 @@
 				<texture border="0,0,0,2">header.png</texture>
 			</control>
 			<control type="group">
-				<posx>545</posx>
+				<include>16x9_xPos_Relocation</include>
+				<posx>535</posx>
 				<posy>23</posy>
 				<control type="button">
 					<description>Previous Button</description>
@@ -59,7 +60,7 @@
 				</control>
 				<control type="togglebutton">
 					<description>Play Button</description>
-					<posx>60</posx>
+					<posx>70</posx>
 					<posy>0</posy>
 					<width>65</width>
 					<height>65</height>
@@ -73,7 +74,7 @@
 				</control>
 				<control type="button">
 					<description>Next Button</description>
-					<posx>130</posx>
+					<posx>150</posx>
 					<posy>5</posy>
 					<width>55</width>
 					<height>55</height>
@@ -84,7 +85,7 @@
 				</control>
 				<control type="progress">
 					<description>Progressbar</description>
-					<posx>-95</posx>
+					<posx>-85</posx>
 					<posy>70</posy>
 					<width>380</width>
 					<height>6</height>
@@ -147,6 +148,7 @@
 			<label>$INFO[System.Time]</label>
 			<visible>!Window.IsVisible(MuteBug)</visible>
 			<include>VisibleFadeEffect</include>
+			<include>16x9_xPos_Relocation</include>
 		</control>
 		<control type="label">
 			<description>Muted label</description>
@@ -665,6 +667,7 @@
 	</include>
 	<include name="ScrollOffsetLabel">
 		<control type="group">
+			<include>16x9_xPos_Relocation</include>
 			<visible>Container.Scrolling + [StringCompare(Container.SortMethod,$LOCALIZE[551]) | StringCompare(Container.SortMethod,$LOCALIZE[561]) | StringCompare(Container.SortMethod,$LOCALIZE[558]) | StringCompare(Container.SortMethod,$LOCALIZE[557]) | StringCompare(Container.SortMethod,$LOCALIZE[556])]</visible>
 			<animation effect="fade" time="100">Visible</animation>
 			<animation effect="fade" time="300">Hidden</animation>

@@ -829,6 +829,7 @@
 			<posx>415</posx>
 			<posy>82r</posy>
 			<animation effect="fade" time="200">VisibleChange</animation>
+			<include>16x9_xPos_Relocation</include>
 			<control type="button" id="600">
 				<posx>0</posx>
 				<posy>0</posy>
