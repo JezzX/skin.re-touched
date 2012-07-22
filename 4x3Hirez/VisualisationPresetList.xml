@@ -46,7 +46,8 @@
 			<textcolor>black</textcolor>
 		</control>
 		<control type="list" id="2">
-			<posx>20</posx>
+			<animation effect="slide" start="0,0" end="10,0" time="0" condition="!Control.IsVisible(61)">Conditional</animation>
+			<posx>10</posx>
 			<posy>80</posy>
 			<width>960</width>
 			<height>750</height>
@@ -54,7 +55,7 @@
 			<onright>2</onright>
 			<onup>2</onup>
 			<ondown>2</ondown>
-			<pagecontrol>-</pagecontrol>
+			<pagecontrol>60</pagecontrol>
 			<scrolltime>200</scrolltime>
 			<itemlayout height="60">
 				<control type="image">
@@ -98,6 +99,25 @@
 					<info>ListItem.Label</info>
 				</control>
 			</focusedlayout>
+		</control>
+		<control type="scrollbar" id="60">
+			<posx>970</posx>
+			<posy>80</posy>
+			<width>29</width>
+			<height>750</height>
+			<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
+			<texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
+			<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
+			<textureslidernib>ScrollBarNib.png</textureslidernib>
+			<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
+			<onleft>3</onleft>
+			<onright>3</onright>
+			<ondown>60</ondown>
+			<onup>60</onup>
+			<showonepage>false</showonepage>
+			<orientation>vertical</orientation>
+			<animation effect="fade" time="150">Visible</animation>
+			<animation effect="fade" time="150">Hidden</animation>
 		</control>
 		<control type="label">
 			<description>number of files/pages in list text label</description>

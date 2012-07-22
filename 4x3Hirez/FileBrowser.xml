@@ -5,14 +5,14 @@
 	<include>Window_OpenClose_Animation_Zoom</include>
 	<coordinates>
 		<system>1</system>
-		<posx>140</posx>
+		<posx>130</posx>
 		<posy>30</posy>
 	</coordinates>
 	<controls>
 		<control type="image">
 			<posx>0</posx>
 			<posy>0</posy>
-			<width>1000</width>
+			<width>1020</width>
 			<height>60</height>
 			<texture border="5">DialogHeader.png</texture>
 		</control>
@@ -25,14 +25,14 @@
 			<label>$LOCALIZE[1023]</label>
 		</control>
 		<control type="group">
-			<posx>930</posx>
+			<posx>950</posx>
 			<posy>0</posy>
 			<include>DialogCloseButtonCommons</include>
 		</control>
 		<control type="image">
 			<posx>0</posx>
 			<posy>60</posy>
-			<width>1000</width>
+			<width>1020</width>
 			<height>840</height>
 			<texture border="5">DialogBack.png</texture>
 		</control>
@@ -41,7 +41,7 @@
 			<description>path label</description>
 			<posx>20</posx>
 			<posy>80</posy>
-			<width>960</width>
+			<width>980</width>
 			<height>30</height>
 			<align>center</align>
 			<aligny>center</aligny>
@@ -50,6 +50,7 @@
 			<textcolor>black</textcolor>
 		</control>
 		<control type="list" id="450">
+			<animation effect="slide" start="0,0" end="10,0" time="0" condition="!Control.IsVisible(60)">Conditional</animation>
 			<posx>20</posx>
 			<posy>120</posy>
 			<width>960</width>
@@ -117,6 +118,26 @@
 				</control>
 			</focusedlayout>
 		</control>
+		<control type="scrollbar" id="60">
+			<posx>990</posx>
+			<posy>120</posy>
+			<width>29</width>
+			<height>650</height>
+			<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
+			<texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
+			<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
+			<textureslidernib>ScrollBarNib.png</textureslidernib>
+			<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
+			<onleft>3</onleft>
+			<onright>3</onright>
+			<ondown>60</ondown>
+			<onup>60</onup>
+			<showonepage>false</showonepage>
+			<orientation>vertical</orientation>
+			<animation effect="fade" time="150">Visible</animation>
+			<animation effect="fade" time="150">Hidden</animation>
+			<visible>Control.IsVisible(450)</visible>
+		</control>
 		<control type="label">
 			<description>Page label</description>
 			<posx>980</posx>
@@ -131,6 +152,7 @@
 			<visible>!Control.IsVisible(451)</visible>
 		</control>
 		<control type="panel" id="451">
+			<animation effect="slide" start="0,0" end="10,0" time="0" condition="!Control.IsVisible(61)">Conditional</animation>
 			<posx>20</posx>
 			<posy>120</posy>
 			<width>960</width>
@@ -139,7 +161,7 @@
 			<onright>60</onright>
 			<onup>451</onup>
 			<ondown>451</ondown>
-			<pagecontrol>60</pagecontrol>
+			<pagecontrol>61</pagecontrol>
 			<scrolltime>200</scrolltime>
 			<itemlayout height="250" width="320">
 				<control type="image">
@@ -188,6 +210,26 @@
 				</control>
 			</focusedlayout>
 		</control>
+		<control type="scrollbar" id="61">
+			<posx>990</posx>
+			<posy>120</posy>
+			<width>29</width>
+			<height>650</height>
+			<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
+			<texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
+			<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
+			<textureslidernib>ScrollBarNib.png</textureslidernib>
+			<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
+			<onleft>3</onleft>
+			<onright>3</onright>
+			<ondown>61</ondown>
+			<onup>61</onup>
+			<showonepage>false</showonepage>
+			<orientation>vertical</orientation>
+			<animation effect="fade" time="150">Visible</animation>
+			<animation effect="fade" time="150">Hidden</animation>
+			<visible>Control.IsVisible(451)</visible>
+		</control>
 		<control type="label">
 			<description>Page label</description>
 			<posx>980</posx>
@@ -204,7 +246,7 @@
 		<control type="grouplist" id="9000">
 			<posx>20</posx>
 			<posy>830</posy>
-			<width>960</width>
+			<width>980</width>
 			<height>50</height>
 			<itemgap>5</itemgap>
 			<align>center</align>

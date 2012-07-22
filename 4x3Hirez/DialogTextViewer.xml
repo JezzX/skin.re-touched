@@ -40,7 +40,7 @@
 			<description>textarea</description>
 			<posx>20</posx>
 			<posy>70</posy>
-			<width>940</width>
+			<width>930</width>
 			<height>820</height>
 			<label>-</label>
 			<font>font13</font>
@@ -49,9 +49,9 @@
 			<pagecontrol>61</pagecontrol>
 		</control>
 		<control type="scrollbar" id="61">
-			<posx>970</posx>
+			<posx>960</posx>
 			<posy>70</posy>
-			<width>20</width>
+			<width>29</width>
 			<height>820</height>
 			<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
 			<texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>

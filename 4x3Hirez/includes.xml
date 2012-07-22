@@ -875,7 +875,7 @@
 		</item>
 	</include>
 	<include name="16x9_xPos_Relocation">
-		<animation effect="slide" start="16x9Offset,0" end="16x9Offset,0" time="0" condition="true">conditional</animation>
+		<animation effect="slide" start="0,0" end="16x9Offset,0" time="0" condition="true">conditional</animation>
 	</include>
 	<include name="Window_OpenClose_Animation">
 		<animation effect="fade" time="250">WindowOpen</animation>

@@ -402,11 +402,11 @@
 		<control type="scrollbar" id="30">
 			<posx>975</posx>
 			<posy>120</posy>
-			<width>25</width>
+			<width>19</width>
 			<height>750</height>
 			<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
-			<texturesliderbar border="2,16,2,16">ScrollBarV_bar.png</texturesliderbar>
-			<texturesliderbarfocus border="2,16,2,16">ScrollBarV_bar_focus.png</texturesliderbarfocus>
+			<texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
+			<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
 			<textureslidernib>ScrollBarNib.png</textureslidernib>
 			<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
 			<onleft>2</onleft>
