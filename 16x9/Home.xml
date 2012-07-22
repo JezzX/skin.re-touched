@@ -6,7 +6,7 @@
 	<controls>
 		<include>CommonBackground</include>
 		<control type="grouplist" id="9010">
-			<visible>!Window.IsActive(PlayerControls) + [Library.HasContent(Movies) | Library.HasContent(TVShows) | Library.HasContent(MusicVideos) | Library.HasContent(Music)]</visible>
+			<visible>!Window.IsActive(PlayerControls) + [Library.HasContent(Movies) | Library.HasContent(TVShows) | Library.HasContent(MusicVideos) | Library.HasContent(Music) | IntegerGreaterThan(Container(2400).NumItems,0)]</visible>
 			<include>VisibleFadeEffect</include>
 			<posx>0</posx>
 			<posy>100</posy>
