@@ -1,4 +1,5 @@
 <window id="125">
+	<include>16x9_xPos_Relocation</include>
 	<include>Window_OpenClose_Animation_Zoom</include>
 	<coordinates>
 		<system>1</system>

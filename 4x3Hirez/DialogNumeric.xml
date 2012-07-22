@@ -21,6 +21,7 @@
 			<posy>170</posy>
 			<animation effect="slide" start="0,-820" end="0,0" time="500" easing="out" tween="quadratic" >WindowOpen</animation>
 			<animation effect="slide" start="0,0" end="0,-820" time="500" easing="in" tween="quadratic" >WindowClose</animation>
+			<include>16x9_xPos_Relocation</include>
 			<control type="image">
 				<posx>0</posx>
 				<posy>70</posy>

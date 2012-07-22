@@ -26,6 +26,7 @@
 			<onclick>Back</onclick>
 		</control>
 		<control type="group">
+			<include>16x9_xPos_Relocation</include>
 			<animation effect="slide" start="0,500" end="0,0" time="400" easing="out" tween="quadratic" >WindowOpen</animation>
 			<animation effect="slide" start="0,0" end="0,500" time="400" easing="in" tween="quadratic" >WindowClose</animation>
 			<animation effect="slide" start="0,0" end="0,500" time="400" easing="in" tween="quadratic" condition="Window.IsVisible(numericinput)">Conditional</animation>
