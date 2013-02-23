@@ -222,7 +222,7 @@
 			<texture>black-back.png</texture>
 			<animation effect="fade" time="400">Visible</animation>
 			<animation effect="fade" time="200">Hidden</animation>
-			<visible>Window.IsActive(ContextMenu) | Window.IsActive(MovieInformation) | Window.IsActive(MusicInformation) | Window.IsActive(SongInformation) | Window.IsActive(FileBrowser) | Window.IsActive(TextViewer) | Window.IsActive(AddonSettings) | Window.IsActive(ContentSettings) | Window.IsActive(SelectDialog) | Window.IsActive(FileStackingDialog) | Window.IsActive(MediaSource) | Window.IsActive(PictureInfo) | [Window.IsActive(NumericInput) + !Window.IsVisible(VirtualKeyboard)] | Window.IsActive(ProfileSettings) | Window.IsActive(LockSettings) | Window.IsActive(SmartPlaylistEditor) | Window.IsActive(SmartPlaylistRule) | Window.IsActive(script-RSS_Editor-rssEditor.xml) | Window.IsActive(script-RSS_Editor-setEditor.xml) | Window.IsActive(AddonInformation) | Window.IsActive(Favourites) | Window.IsActive(PictureInfo) | Window.IsActive(KaraokeLargeSelector) | Window.IsActive(custom_skinsettings_1113.xml) | Window.IsActive(Peripherals) | Window.IsActive(PeripheralSettings)</visible>
+			<visible>Window.IsActive(ContextMenu) | Window.IsActive(MovieInformation) | Window.IsActive(MusicInformation) | Window.IsActive(SongInformation) | Window.IsActive(FileBrowser) | Window.IsActive(TextViewer) | Window.IsActive(AddonSettings) | Window.IsActive(ContentSettings) | Window.IsActive(SelectDialog) | Window.IsActive(FileStackingDialog) | Window.IsActive(MediaSource) | Window.IsActive(PictureInfo) | [Window.IsActive(NumericInput) + !Window.IsVisible(VirtualKeyboard)] | Window.IsActive(ProfileSettings) | Window.IsActive(LockSettings) | Window.IsActive(SmartPlaylistEditor) | Window.IsActive(SmartPlaylistRule) | Window.IsActive(script-RSS_Editor-rssEditor.xml) | Window.IsActive(script-RSS_Editor-setEditor.xml) | Window.IsActive(AddonInformation) | Window.IsActive(Favourites) | Window.IsActive(PictureInfo) | Window.IsActive(KaraokeLargeSelector) | Window.IsActive(custom_skinsettings_1113.xml) | Window.IsActive(Peripherals) | Window.IsActive(PeripheralSettings) | Window.IsActive(MediaFilter)</visible>
 		</control>
 	</include>
 	<include name="MediaWindowTitleCommons">
@@ -410,15 +410,17 @@
 			<content>
 				<item>
 					<label>587</label>
-					<onclick>SendClick(19)</onclick>
+					<onclick condition="!Container.CanFilterAdvanced">SendClick(19)</onclick>
+					<onclick condition="Container.CanFilterAdvanced">Filter</onclick>
 					<icon>icon_filter.png</icon>
-					<visible>IsEmpty(Window.Property(filter))</visible>
+					<visible>!Container.Filtered</visible>
 				</item>
 				<item>
 					<label>587</label>
-					<onclick>SendClick(19)</onclick>
+					<onclick condition="!Container.CanFilterAdvanced">SendClick(19)</onclick>
+					<onclick condition="Container.CanFilterAdvanced">Filter</onclick>
 					<icon>icon_filter_on.png</icon>
-					<visible>!IsEmpty(Window.Property(filter))</visible>
+					<visible>Container.Filtered</visible>
 				</item>
 				<item>
 					<label>31202</label>
