@@ -3,7 +3,7 @@
 	<include>dialogeffect</include>
 	<controls>
 		<control type="group">
-			<posx>435r</posx>
+			<posx>545r</posx>
 			<posy>25</posy>
 			<visible>!Window.IsVisible(FullscreenVideo) + !Window.IsVisible(Visualisation)</visible>
 			<control type="image">

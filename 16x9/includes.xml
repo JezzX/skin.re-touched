@@ -250,6 +250,7 @@
 		<control type="group">
 			<posx>0</posx>
 			<posy>35</posy>
+			<visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
 			<include>Window_OpenClose_Animation</include>
 			<control type="image">
 				<posx>140r</posx>
@@ -563,7 +564,7 @@
 	</include>
 	<include name="CommonNowPlaying">
 		<control type="group">
-			<posx>110</posx>
+			<posx>220</posx>
 			<posy>25</posy>
 			<visible>Player.HasMedia + !Window.IsVisible(PlayerControls)</visible>
 			<include>VisibleFadeEffect</include>

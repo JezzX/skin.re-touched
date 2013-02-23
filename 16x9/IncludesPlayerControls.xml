@@ -716,7 +716,7 @@
 				<description>Progressbar</description>
 				<posx>200</posx>
 				<posy>0</posy>
-				<width>880</width>
+				<width>1306</width>
 				<height>12</height>
 				<info>Player.Progress</info>
 				<texturebg flipy="true" border="10,0,10,0">HeaderProgressBack.png</texturebg>
@@ -726,7 +726,7 @@
 				<description>Seek Slider</description>
 				<posx>200</posx>
 				<posy>-4</posy>
-				<width>880</width>
+				<width>1306</width>
 				<height>20</height>
 				<action>seek</action>
 				<texturesliderbar>OSDProgressBack2.png</texturesliderbar>
