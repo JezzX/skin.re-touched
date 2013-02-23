@@ -107,6 +107,13 @@
 						<include>ButtonCommonValues2</include>
 						<label>25000</label>
 					</control>
+					<control type="radiobutton" id="7">
+						<description>Hide foreign</description>
+						<posx>0</posx>
+						<posy>180</posy>
+						<include>ButtonCommonValues2</include>
+						<label>25001</label>
+					</control>
 					<control type="image">
 						<posx>0</posx>
 						<posy>100</posy>
