@@ -26,7 +26,7 @@
 					<posy>10</posy>
 					<width>110</width>
 					<height>165</height>
-					<texture background="true">$INFO[ListItem.Icon]</texture>
+					<texture background="true">$VAR[PosterThumb]</texture>
 				</control>
 				<control type="image">
 					<posx>0</posx>
@@ -128,7 +128,7 @@
 					<posy>10</posy>
 					<width>110</width>
 					<height>165</height>
-					<texture background="true">$INFO[ListItem.Icon]</texture>
+					<texture background="true">$VAR[PosterThumb]</texture>
 				</control>
 				<control type="image">
 					<posx>0</posx>
@@ -454,7 +454,7 @@
 					<width>610</width>
 					<height>114</height>
 					<aspectratio>keep</aspectratio>
-					<texture background="true">$INFO[ListItem.Icon]</texture>
+					<texture background="true">$VAR[BannerThumb]</texture>
 				</control>
 				<control type="image">
 					<posx>0</posx>
@@ -510,7 +510,7 @@
 					<width>610</width>
 					<height>114</height>
 					<aspectratio>keep</aspectratio>
-					<texture background="true">$INFO[ListItem.Icon]</texture>
+					<texture background="true">$VAR[BannerThumb]</texture>
 				</control>
 				<control type="image">
 					<posx>0</posx>

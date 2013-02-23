@@ -261,7 +261,7 @@
 				<aspectratio>keep</aspectratio>
 				<bordertexture border="8">ThumbShadow.png</bordertexture>
 				<bordersize>8</bordersize>
-				<texture background="true">$INFO[ListItem.Icon]</texture>
+				<texture background="true">$VAR[BannerThumb]</texture>
 			</control>
 			<control type="label">
 				<posx>10</posx>
