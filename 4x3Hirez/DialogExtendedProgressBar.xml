@@ -1,4 +1,4 @@
-<window id="133">
+<window id="112">
 	<defaultcontrol></defaultcontrol>
 	<include>dialogeffect</include>
 	<controls>
@@ -13,7 +13,7 @@
 				<height>67</height>
 				<texture border="8">IconBack.png</texture>
 			</control>
-			<control type="fadelabel" id="401">
+			<control type="fadelabel" id="30">
 				<posx>10</posx>
 				<posy>5</posy>
 				<width>330</width>
@@ -25,7 +25,7 @@
 				<font>font10_title</font>
 				<textcolor>black</textcolor>
 			</control>
-			<control type="fadelabel" id="405">
+			<control type="fadelabel" id="31">
 				<posx>10</posx>
 				<posy>24</posy>
 				<width>330</width>
@@ -38,7 +38,7 @@
 				<textcolor>black</textcolor>
 				<haspath>true</haspath>
 			</control>
-			<control type="progress" id="404">
+			<control type="progress" id="32">
 				<description>progress control</description>
 				<posx>5</posx>
 				<posy>47</posy>
