@@ -31,11 +31,6 @@
 			<filename>Arial.ttf</filename>
 			<size>30</size>
 		</font>
-		<font>
-			<name>font55</name>
-			<filename>Arial.ttf</filename>
-			<size>55</size>
-		</font>
 	<!-- Title Fonts -->
 		<font>
 			<name>font8_title</name>
@@ -55,11 +50,6 @@
 		<font>
 			<name>font13_title</name>
 			<filename>DejaVuSans-Bold.ttf</filename>
-			<size>20</size>
-		</font>
-		<font>
-			<name>font13caps_title</name>
-			<filename>DejaVuSans-Bold-Caps.ttf</filename>
 			<size>20</size>
 		</font>
 		<font>
@@ -117,11 +107,6 @@
 			<filename>Arial.ttf</filename>
 			<size>30</size>
 		</font>
-		<font>
-			<name>font55</name>
-			<filename>Arial.ttf</filename>
-			<size>55</size>
-		</font>
 	<!-- Title Fonts -->
 		<font>
 			<name>font8_title</name>
@@ -143,12 +128,6 @@
 		</font>
 		<font>
 			<name>font13_title</name>
-			<filename>Arial.ttf</filename>
-			<size>20</size>
-			<style>bold</style>
-		</font>
-		<font>
-			<name>font13caps_title</name>
 			<filename>Arial.ttf</filename>
 			<size>20</size>
 			<style>bold</style>

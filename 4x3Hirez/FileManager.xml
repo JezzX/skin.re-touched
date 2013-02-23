@@ -2,7 +2,7 @@
 	<defaultcontrol>20</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<controls>
-		<include>CommonSettingsBackground</include>
+		<include>CommonBackground</include>
 		<control type="group">
 			<animation effect="slide" start="-620,0" end="0,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
 			<animation effect="slide" start="0,0" end="-620,0" time="400" tween="quadratic" easing="out">WindowClose</animation>
@@ -342,7 +342,5 @@
 				<label>$LOCALIZE[7]</label>
 			</control>
 		</control>
-		<include>WindowTitleHomeButton</include>
-		<include>Clock</include>
 	</controls>
 </window>

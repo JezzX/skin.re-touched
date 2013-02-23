@@ -39,7 +39,7 @@
 				<height>500</height>
 				<texturenofocus>-</texturenofocus>
 				<texturefocus>-</texturefocus>
-				<onclick>-</onclick>
+				<onclick>noop</onclick>
 			</control>
 			<control type="image">
 				<posx>0</posx>

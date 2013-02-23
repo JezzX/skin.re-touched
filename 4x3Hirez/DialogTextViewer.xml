@@ -28,7 +28,6 @@
 			<posy>0</posy>
 			<include>DialogCloseButtonCommons</include>
 		</control>
-		</control>
 		<control type="image">
 			<posx>0</posx>
 			<posy>60</posy>
