@@ -190,9 +190,9 @@
 					<icon>icon_big_addons.png</icon>
 				</item>
 				<item id="7">
-					<label>705</label>
+					<label>14036</label>
 					<label2>31405</label2>
-					<onclick>ActivateWindow(NetworkSettings)</onclick>
+					<onclick>ActivateWindow(ServiceSettings)</onclick>
 					<icon>icon_big_network.png</icon>
 				</item>
 				<item id="8">
