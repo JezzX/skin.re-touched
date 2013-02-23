@@ -21,7 +21,7 @@
 			<aspectratio>scale</aspectratio>
 			<width>ScreenWidth</width>
 			<height>ScreenHeight</height>
-			<texture fallback="special://skin/background/background.jpg">special://skin/backgrounds/$INFO[Skin.CurrentTheme].jpg</texture>
+			<texture fallback="special://skin/background/SKINDEFAULT.jpg">special://skin/background/$INFO[Skin.CurrentTheme].jpg</texture>
 		</control>
 		<include>CommonHeader</include>
 	</include>
