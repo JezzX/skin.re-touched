@@ -37,6 +37,15 @@
 			<height>840</height>
 			<texture border="5">DialogBack.png</texture>
 		</control>
+		<control type="image">
+			<posx>0</posx>
+			<posy>60</posy>
+			<width>1000</width>
+			<height>840</height>
+			<aspectratio>scale</aspectratio>
+			<texture>$INFO[ListItem.Art(fanart)]</texture>
+			<colordiffuse>22FFFFFF</colordiffuse>
+		</control>
 
 		<control type="group">
 			<visible>[!container.content(tvshows) + !container.content(episodes) + !container.content(musicvideos)] + !Control.IsVisible(50)</visible>
