@@ -39,7 +39,7 @@
 				<posy>0</posy>
 				<include>WindowTitleCommons</include>
 				<width>700</width>
-				<label>XBMC Subtitles</label>
+				<label>$LOCALIZE[287]</label>
 			</control>
 			<control type="group">
 				<posx>740</posx>
@@ -147,11 +147,10 @@
 						</control>
 						<control type="label">
 							<posx>735</posx>
-							<posy>5</posy>
+							<posy>7</posy>
 							<width>50</width>
-							<height>23</height>
+							<height>25</height>
 							<font>font8_title</font>
-							<aligny>center</aligny>
 							<textcolor>white</textcolor>
 							<align>center</align>
 							<aligny>center</aligny>
@@ -230,11 +229,10 @@
 						</control>
 						<control type="label">
 							<posx>735</posx>
-							<posy>5</posy>
+							<posy>7</posy>
 							<width>50</width>
-							<height>23</height>
+							<height>25</height>
 							<font>font8_title</font>
-							<aligny>center</aligny>
 							<textcolor>white</textcolor>
 							<align>center</align>
 							<aligny>center</aligny>

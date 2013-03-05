@@ -531,8 +531,8 @@
 		<texturefocus border="5">HomeSubFO.png</texturefocus>
 		<texturenofocus border="5">HomeSubNF.png</texturenofocus>
 		<pulseonselect>false</pulseonselect>
-		<textureradiofocus>HomeTab-focus.png</textureradiofocus>
-		<textureradionofocus>-</textureradionofocus>
+		<textureradioon>HomeTab-focus.png</textureradioon>
+		<textureradiooff>-</textureradiooff>
 		<radioposx>5</radioposx>
 		<radioposy>43</radioposy>
 		<radiowidth>190</radiowidth>
