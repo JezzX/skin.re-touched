@@ -5,7 +5,7 @@
   name="re-Touched"
   provider-name="Jezz_X">
   <requires>
-    <import addon="xbmc.gui" version="4.000"/>
+    <import addon="xbmc.gui" version="4.0.0"/>
   </requires>
   <extension
     point="xbmc.gui.skin"
